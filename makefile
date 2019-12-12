@@ -27,7 +27,6 @@ greedy.o: greedy.cpp solucion.o
 solucion.o: solucion.cpp moneda.o
 moneda.o: moneda.cpp
 
-# Elimina los ejecutables y los objetos creados
 clean:
 	@echo "Limpiando todo..."
-	@rm -r *.o *.exe Cambio
+	@find . -name "*.o" -type f -delete
