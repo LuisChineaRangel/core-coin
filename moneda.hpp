@@ -1,4 +1,4 @@
-/// @file moneda.h
+/// @file moneda.hpp
 /// @brief Definiciones de la clase Moneda. Representa cualquier 
 /// tipo de moneda, ya sea metálica o en papel (billetes)
 /// @author Luis Marcelo Chinea Rangel\n
@@ -20,7 +20,7 @@
 #include "exception.hpp"
 
 // Medidas del euros
-const string CENTIMO = "cent.";
+const string CENTIMO = "c";
 const string EURO = "Euro";
 
 class Moneda {

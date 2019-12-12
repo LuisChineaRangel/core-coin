@@ -21,30 +21,37 @@ Greedy::Greedy()
 }
 Greedy::Greedy(set<Moneda> monedas) : monedas_(monedas) {}
 
-pair<vector<unsigned int>,vector<Moneda>> Greedy::devolver_cambio(double aDevolver)
+set<Moneda> Greedy::getMonedas() const { return monedas_; }
+Solucion Greedy::getSolucion() const { return solucion_; }
+
+Solucion Greedy::devolver_cambio(double aDevolver)
 {
-	solucion_.first.clear(); solucion_.second.clear();
+	cout << aDevolver << endl;
+	solucion_.clean();
 	double suma = 0;
 	while (suma != aDevolver) {
+		cout << suma << " ";
 		Moneda moneda (0);
-		for(set<Moneda>::iterator it = monedas_.begin(); it != monedas_.end(); it++) {
-			if ((moneda < (*it) && ((suma + (*it).getValor()) <= aDevolver)))
+		for(set<Moneda>::reverse_iterator it = monedas_.rbegin(); it != monedas_.rend(); it++) {
+			cout << (suma + (*it).getValor()) << " ";
+			if ((moneda < (*it) && ((suma + (*it).getValor()) <= aDevolver))) {
 				moneda = (*it);
+				break;
+			}
 		}
 		if (moneda.getValor() == 0)
 			throw noSolucion();
-		if (find (solucion_.second.begin(), solucion_.second.end(), moneda) == solucion_.second.end()) {
-			solucion_.first.push_back(1);
-			solucion_.second.push_back(moneda);
-		}
-		else {
-			for (size_t i = 0; i < solucion_.second.size(); i++) {
-				if (solucion_.second[i] == moneda)
-					solucion_.first[i]++;
-			}
-		}
+			
+		solucion_.insertarMoneda(moneda);
 		suma += moneda.getValor();
+		cout << endl;
 	}
 	return solucion_;
 }
 void Greedy::insertarMoneda(const Moneda moneda) { monedas_.insert(moneda); }
+
+ostream& operator<<(ostream& os, const Greedy& voraz)
+{
+	os << voraz.getSolucion();
+	return os;
+}

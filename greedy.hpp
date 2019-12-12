@@ -15,11 +15,8 @@
 //////////////////////////////////////////////////////////////////
 #pragma once
 #include <set>
-#include <vector>
-#include <utility>
-#include <algorithm> 
 
-#include "moneda.hpp"
+#include "solucion.hpp"
 
 // Monedas y Billetes base de la Unión Europea
 const Moneda UN_CENT (0.01);
@@ -41,11 +38,15 @@ const Moneda QUINIENTOS_EUROS (500);
 class Greedy {
 	private:
 		set<Moneda> monedas_;
-		pair<vector<unsigned int>,vector<Moneda>> solucion_;
+		Solucion solucion_;
 	public:
 		Greedy();
 		Greedy(set<Moneda>);
 		
-		pair<vector<unsigned int>,vector<Moneda>> devolver_cambio(double);
+		set<Moneda> getMonedas() const;
+		Solucion getSolucion() const;
+		
+		Solucion devolver_cambio(double);
 		void insertarMoneda(const Moneda);
 };
+ostream& operator<<(ostream&, const Greedy&);

@@ -16,18 +16,56 @@
 
 int main(int argc, char** argv) {
 	try {
-		Greedy monstruo_voraz;
-		pair<vector<unsigned int>,vector<Moneda>> solucion = monstruo_voraz.devolver_cambio(25);
-		for (size_t i = 0; i < solucion.first.size(); i++)
-			if (solucion.first[i] == 1)
-				cout << solucion.second[i] << " ";
-			else
-				cout << solucion.first[i] << "x" << solucion.second[i] << " ";
+		int opcion = 1;
+		double importe, valorMoneda;
+		Greedy monstruoVoraz;
+		while (opcion != 0) {
+			cout << "-------------------------------------------------------------------------------" << endl;
+			cout << "Algoritmo Voraz (Greedy) para el cambio de monedas"							  << endl;
+			cout << "-------------------------------------------------------------------------------" << endl;
+			cout << "[0] Salir"																		  << endl;
+			cout << "-------------------------------------------------------------------------------" << endl;
+			cout << "[1] Devolver una cantidad"														  << endl;
+			cout << "[2] Mostrar ultima solucion"													  << endl;
+			cout << "[3] Insertar una nueva moneda o billete al programa"							  << endl;
+			cout << "[4] Ver las monedas disponibles en el programa"								  << endl;
+			cout << "-------------------------------------------------------------------------------" << endl;
+			cout << "Introduzca una opcion ---> "; cin >> opcion;
+			cout << "-------------------------------------------------------------------------------" << endl;
+			switch (opcion) {
+				case 1:
+					cout << "Importe: "; cin >> importe;
+					cout << "-------------------------------------------------------------------" << endl;
+					monstruoVoraz.devolver_cambio(importe); cout << monstruoVoraz << endl;
+					
+					break;
+				case 2:
+					cout << monstruoVoraz << endl;
+					break;
+				case 3:
+					cout << "Introduzca el valor de la moneda (en euros) de la moneda" 						  << endl;
+					cout << "-------------------------------------------------------------------------------" << endl;
+					cout << "Valor: "; cin >> valorMoneda;
+					cout << "-------------------------------------------------------------------------------" << endl;
+					monstruoVoraz.insertarMoneda(Moneda(valorMoneda));
+					break;
+				case 4:
+					set<Moneda> monedas = monstruoVoraz.getMonedas();
+					cout << "Disponemos de monedas de: ";
+					for (set<Moneda>::iterator it = monedas.begin(); it != monedas.end(); it++) {
+						cout << (*it);
+						if (it != prev(monedas.end()))
+							cout << ", ";
+					}
+					cout << endl;
+					break;
+			}
+		}
 	}
 	catch (exception& e) {
-		cout << "---------------------------------------------------------" << endl;
+		cout << "-------------------------------------------------------------------" << endl;
     	cout << e.what() << endl;
-    	cout << "---------------------------------------------------------" << endl;
+    	cout << "-------------------------------------------------------------------" << endl;
 	}
 	return 0;
 }
