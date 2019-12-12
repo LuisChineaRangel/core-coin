@@ -11,7 +11,7 @@ CXX=g++
 CXXFLAGS=-std=c++11
 
 # Ficheros fuente
-SRC=cambio.cpp greedy.cpp moneda.cpp
+SRC=cambio.cpp greedy.cpp solucion.cpp moneda.cpp
 
 # Objetos
 OBJS=$(SRC:.cpp=.o)
@@ -23,15 +23,11 @@ Cambio: $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o Cambio
 	
 cambio.o: cambio.cpp greedy.o
-greedy.o: greedy.cpp moneda.o
+greedy.o: greedy.cpp solucion.o
+solucion.o: solucion.cpp moneda.o
 moneda.o: moneda.cpp
-
-# Tipos de archivos que NO borra el clean
-MAKEFILE='makefile'
-CPP="*.cpp"
-HPP="*.hpp"
 
 # Elimina los ejecutables y los objetos creados
 clean:
 	@echo "Limpiando todo..."
-	@find . -maxdepth 1 -type f ! -name $(MAKEFILE) ! -name $(CPP) ! -name $(HPP) -delete
+	@rm -r *.o *.exe Cambio
