@@ -65,14 +65,14 @@ int main(int argc, char** argv)
 		// Menú interactivo
 		while (opcion != 0) {
 			cout << "-------------------------------------------------------------------------------" << endl;
-			cout << "Algoritmo Voraz (Greedy) para el cambio de monedas"							  << endl;
+			cout << "Algoritmo Voraz (Greedy) para el cambio de monedas"                              << endl;
 			cout << "-------------------------------------------------------------------------------" << endl;
-			cout << "[0] Salir"																		  << endl;
+			cout << "[0] Salir"                                                                       << endl;
 			cout << "-------------------------------------------------------------------------------" << endl;
-			cout << "[1] Devolver una cantidad"														  << endl;
-			cout << "[2] Mostrar ultima solucion"													  << endl;
-			cout << "[3] Insertar una nueva moneda o billete al programa"							  << endl;
-			cout << "[4] Ver las monedas disponibles en el programa"								  << endl;
+			cout << "[1] Devolver una cantidad"                                                       << endl;
+			cout << "[2] Mostrar ultima solucion"                                                     << endl;
+			cout << "[3] Insertar una nueva moneda o billete al programa"                             << endl;
+			cout << "[4] Ver las monedas disponibles en el programa"                                  << endl;
 			cout << "-------------------------------------------------------------------------------" << endl;
 			cout << "Introduzca una opcion ---> "; cin >> opcion;
 			cout << "-------------------------------------------------------------------------------" << endl;
@@ -93,7 +93,7 @@ int main(int argc, char** argv)
 					cout << monstruoVoraz << endl;
 					break;
 				case 3:
-					cout << "Introduzca el valor de la moneda (en euros) de la moneda" 						  << endl;
+					cout << "Introduzca el valor de la moneda (en euros) de la moneda"                        << endl;
 					cout << "-------------------------------------------------------------------------------" << endl;
 					cout << "Valor: "; cin >> valorMoneda;
 					monstruoVoraz.insertarMoneda(Moneda(valorMoneda));
@@ -135,15 +135,15 @@ int main(int argc, char** argv)
 void help() 
 {
 	cout << "-------------------------------------------------------------------------------" << endl;
-	cout << "Ejecución del Programa: ./Cambio"        							  << endl;
-	cout << "-------------------------------------------------------------------" << endl;
-	cout << "Una vez iniciado el programa, se abrira al usuario un menu"		  << endl;
-	cout << "interactivo con las distintas opciones del algoritmo"				  << endl;
+	cout << "Ejecución del Programa: ./Cambio"                                                << endl;
+	cout << "-------------------------------------------------------------------------------" << endl;
+	cout << "Una vez iniciado el programa, se abrira al usuario un menu"                      << endl;
+	cout << "interactivo con las distintas opciones del algoritmo"                            << endl;
 	cout << "-------------------------------------------------------------------------------" << endl;
 }
 
 /// @brief Mensaje de error
 void error() {
-	cout << "Modo de empleo: ./Cambio"   					<< endl;
+	cout << "Modo de empleo: ./Cambio"                      << endl;
 	cout << "Pruebe ’./Cambio --help’ para más información"	<< endl;
 }
