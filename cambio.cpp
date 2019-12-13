@@ -96,7 +96,6 @@ int main(int argc, char** argv)
 					cout << "Introduzca el valor de la moneda (en euros) de la moneda" 						  << endl;
 					cout << "-------------------------------------------------------------------------------" << endl;
 					cout << "Valor: "; cin >> valorMoneda;
-					cout << "-------------------------------------------------------------------------------" << endl;
 					monstruoVoraz.insertarMoneda(Moneda(valorMoneda));
 					break;
 				case 4:
