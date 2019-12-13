@@ -18,7 +18,8 @@
 /// brief Constructor por defecto. Configuración por defecto.
 Greedy::Greedy() 
 {
-	monedas_ = set<Moneda> {UN_CENT, DOS_CENT, CINCO_CENT, DIEZ_CENT, VEINTE_CENT, CINCUENTA_CENT, UN_EURO, DOS_EUROS};
+	monedas_ = set<Moneda> {UN_CENT, DOS_CENT, CINCO_CENT, DIEZ_CENT, VEINTE_CENT, CINCUENTA_CENT, UN_EURO, DOS_EUROS, 
+	                        CINCO_EUROS, DIEZ_EUROS, VEINTE_EUROS, CINCUENTA_EUROS, CIEN_EUROS, DOSCIENTOS_EUROS, QUINIENTOS_EUROS};
 }
 
 /// @brief Constructor parametrizado. Recibe un conjunto de monedas para almacenarlas 
