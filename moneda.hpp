@@ -19,18 +19,21 @@
 
 #include "exception.hpp"
 
-// Medidas del euros
+// Medidas del euro
 const string CENTIMO = "c";
 const string EURO = "Euro";
 
+/// @brief Moneda
 class Moneda {
 	private:
-		double valor_;
+		/// Valor de la Moneda
+		float valor_;
 	public:
-		Moneda(double);
+		Moneda(float);
 		
-		double getValor() const;
+		float getValor() const;
 		bool operator<(const Moneda&) const;
+		bool operator<=(const Moneda&) const;
 		bool operator==(const Moneda&) const;
 		Moneda operator+(const Moneda&) const;
 };

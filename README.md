@@ -14,6 +14,12 @@ Ejecute:
 
 	$ ./Cambio
 
+Se desplegará un menú interactivo al usuario con varias opciones:
+	- Calcular el cambio a un importe solicitado
+	- Ver la última solución hallada
+	- Consultar las monedas disponibles del programa
+	- Añadir nuevas monedas al programa
+
 ## Ayuda
 
 Para más información sobre el funcionamiento del programa, ejecute:

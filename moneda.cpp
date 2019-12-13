@@ -15,21 +15,28 @@
 //////////////////////////////////////////////////////////////////
 #include "moneda.hpp"
 
-Moneda::Moneda(double valor)
+/// @brief Constructor parametrizado. Recibe un valor de moneda.
+/// @param valor Valor de la moneda.
+Moneda::Moneda(float valor = 0)
 {
 	if (valor < 0)
-		throw valorNegativo();
+		throw ValorNegativo();
 	valor_ = valor;
 }
 
-double Moneda::getValor() const { return valor_; }
+/// @brief Getter del valor de la moneda.
+float Moneda::getValor() const { return valor_; }
+
+// Sobrecarga de algunos operadores
 bool Moneda::operator<(const Moneda& moneda) const { return valor_ < moneda.getValor(); }
+bool Moneda::operator<=(const Moneda& moneda) const { return valor_ <= moneda.getValor(); }
 bool Moneda::operator==(const Moneda& moneda) const { return valor_ == moneda.getValor(); }
 Moneda Moneda::operator+(const Moneda& moneda) const { return Moneda(getValor() + moneda.getValor()); }
 
+/// @brief Sobrecarga del operador de salida.
 ostream& operator<<(ostream& os, const Moneda& moneda)
 {
-	double valor = moneda.getValor();
+	float valor = moneda.getValor();
 	string medida = EURO;
 	if ((valor > 0) && (valor < 1)) {
 		valor *= 100;

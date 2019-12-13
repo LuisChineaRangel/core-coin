@@ -20,9 +20,12 @@
 
 #include "moneda.hpp"
 
+/// @class Solucion
 class Solucion {
 	private:
+		/// Conjunto de la solución. Cada tipo de moneda va asociado a una cantidad.
 		pair<vector<unsigned int>,vector<Moneda>> conjunto_;
+		/// Cantidad Total de monedas.
 		unsigned int cantidad_;
 	public:
 		Solucion();

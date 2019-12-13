@@ -17,14 +17,18 @@
 
 using namespace std;
 
-class valorNegativo : public exception {
+/// @class ValorNegativo
+/// @brief Excepción en el caso de que se introduzca una moneda de valor negativo.
+class ValorNegativo : public exception {
   public:
     virtual const char* what() const throw() {
       return "¡VALOR DE MONEDA NEGATIVO!";
     }
 };
 
-class noSolucion : public exception {
+/// @class NoSolucion
+/// @brief Excepción en el caso de que no se halle una solución.
+class NoSolucion : public exception {
   public:
     virtual const char* what() const throw() {
       return "No disponemos de cambio para su importe.\nPruebe introduciendo mas tipos de monedas al programa.";

@@ -15,41 +15,50 @@
 //////////////////////////////////////////////////////////////////
 #include "greedy.hpp"
 
+/// brief Constructor por defecto. Configuración por defecto.
 Greedy::Greedy() 
 {
 	monedas_ = set<Moneda> {UN_CENT, DOS_CENT, CINCO_CENT, DIEZ_CENT, VEINTE_CENT, CINCUENTA_CENT, UN_EURO, DOS_EUROS};
 }
+
+/// @brief Constructor parametrizado. Recibe un conjunto de monedas para almacenarlas 
+/// en el programa, cambiando la configuración por defecto.
+/// @param monedas Conjunto de Monedas a guardar.
 Greedy::Greedy(set<Moneda> monedas) : monedas_(monedas) {}
 
+/// @brief Getter del Conjunto de Monedas.
 set<Moneda> Greedy::getMonedas() const { return monedas_; }
+/// @brief Getter de la última solución guardada.
 Solucion Greedy::getSolucion() const { return solucion_; }
 
-Solucion Greedy::devolver_cambio(double aDevolver)
+/// @brief Calcular el cambio, con el mínimo nº de monedas, de un importe solicitado.
+/// @param aDevolver Importe a cambiar.
+Solucion Greedy::devolver_cambio(float aDevolver)
 {
-	cout << aDevolver << endl;
 	solucion_.clean();
-	double suma = 0;
+	float suma = 0;
 	while (suma != aDevolver) {
-		cout << suma << " ";
-		Moneda moneda (0);
+		Moneda moneda(0);
 		for(set<Moneda>::reverse_iterator it = monedas_.rbegin(); it != monedas_.rend(); it++) {
-			cout << (suma + (*it).getValor()) << " ";
-			if ((moneda < (*it) && ((suma + (*it).getValor()) <= aDevolver))) {
+			if ((moneda < (*it)) && ((suma + (*it).getValor()) <= aDevolver)) {
 				moneda = (*it);
 				break;
 			}
 		}
 		if (moneda.getValor() == 0)
-			throw noSolucion();
+			throw NoSolucion();
 			
 		solucion_.insertarMoneda(moneda);
 		suma += moneda.getValor();
-		cout << endl;
 	}
 	return solucion_;
 }
+
+/// @brief Insertar una nueva moneda a nuestro conjunto de monedas disponibles.
+/// @param moneda Nueva moneda disponible
 void Greedy::insertarMoneda(const Moneda moneda) { monedas_.insert(moneda); }
 
+/// @brief Sobrecarga del operador de salida
 ostream& operator<<(ostream& os, const Greedy& voraz)
 {
 	os << voraz.getSolucion();

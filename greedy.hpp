@@ -35,9 +35,12 @@ const Moneda CIEN_EUROS (100);
 const Moneda DOSCIENTOS_EUROS (200);
 const Moneda QUINIENTOS_EUROS (500);
 
+/// @class Greedy
 class Greedy {
 	private:
+		/// Conjunto de las monedas disponibles. 
 		set<Moneda> monedas_;
+		/// Última solución guardada.
 		Solucion solucion_;
 	public:
 		Greedy();
@@ -46,7 +49,7 @@ class Greedy {
 		set<Moneda> getMonedas() const;
 		Solucion getSolucion() const;
 		
-		Solucion devolver_cambio(double);
+		Solucion devolver_cambio(float);
 		void insertarMoneda(const Moneda);
 };
 ostream& operator<<(ostream&, const Greedy&);
