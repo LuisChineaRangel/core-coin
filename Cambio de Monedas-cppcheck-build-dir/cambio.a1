@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2388801995">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="36"/>
+    <functiondecl functionName="help" lineNumber="135"/>
+    <functiondecl functionName="error" lineNumber="146"/>
+    <functiondecl functionName="main" lineNumber="36"/>
+    <functiondecl functionName="help" lineNumber="135"/>
+    <functiondecl functionName="error" lineNumber="146"/>
+    <functioncall functionName="CIEN_EUROS"/>
+    <functioncall functionName="CINCO_CENT"/>
+    <functioncall functionName="CINCO_EUROS"/>
+    <functioncall functionName="CINCUENTA_CENT"/>
+    <functioncall functionName="CINCUENTA_EUROS"/>
+    <functioncall functionName="DIEZ_CENT"/>
+    <functioncall functionName="DIEZ_EUROS"/>
+    <functioncall functionName="DOSCIENTOS_EUROS"/>
+    <functioncall functionName="DOS_CENT"/>
+    <functioncall functionName="DOS_EUROS"/>
+    <functioncall functionName="Moneda"/>
+    <functioncall functionName="QUINIENTOS_EUROS"/>
+    <functioncall functionName="UN_CENT"/>
+    <functioncall functionName="UN_EURO"/>
+    <functioncall functionName="VEINTE_CENT"/>
+    <functioncall functionName="VEINTE_EUROS"/>
+    <functioncall functionName="argc"/>
+    <functioncall functionName="argv"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="devolver_cambio"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="getMonedas"/>
+    <functioncall functionName="getopt_long"/>
+    <functioncall functionName="help"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="ignore"/>
+    <functioncall functionName="importe"/>
+    <functioncall functionName="insertarMoneda"/>
+    <functioncall functionName="long_options"/>
+    <functioncall functionName="opcion"/>
+    <functioncall functionName="option_index"/>
+    <functioncall functionName="prev"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="system"/>
+    <functioncall functionName="valorMoneda"/>
+    <functioncall functionName="what"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

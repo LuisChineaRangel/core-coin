@@ -17,7 +17,7 @@
 
 /// @brief Constructor parametrizado. Recibe un valor de moneda.
 /// @param valor Valor de la moneda.
-Moneda::Moneda(float valor = 0)
+Moneda::Moneda(float valor)
 {
 	if (valor < 0)
 		throw ValorNegativo();

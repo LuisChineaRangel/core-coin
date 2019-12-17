@@ -29,7 +29,7 @@ class Moneda {
 		/// Valor de la Moneda
 		float valor_;
 	public:
-		Moneda(float);
+		Moneda(float = 0);
 		
 		float getValor() const;
 		bool operator<(const Moneda&) const;

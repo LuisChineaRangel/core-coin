@@ -15,6 +15,7 @@
 //////////////////////////////////////////////////////////////////
 #pragma once
 #include <set>
+#include <cmath>
 
 #include "solucion.hpp"
 
@@ -35,6 +36,9 @@ const Moneda CIEN_EUROS (100);
 const Moneda DOSCIENTOS_EUROS (200);
 const Moneda QUINIENTOS_EUROS (500);
 
+// Constante de precisión
+const float EPSILON = 1E-4;
+
 /// @class Greedy
 class Greedy {
 	private:
@@ -43,8 +47,10 @@ class Greedy {
 		/// Última solución guardada.
 		Solucion solucion_;
 	public:
-		Greedy();
-		Greedy(set<Moneda>);
+		Greedy(const set<Moneda>& = set<Moneda> { UN_CENT, DOS_CENT, CINCO_CENT, DIEZ_CENT, 
+		                                          VEINTE_CENT, CINCUENTA_CENT, UN_EURO, DOS_EUROS, 
+	                                              CINCO_EUROS, DIEZ_EUROS, VEINTE_EUROS, CINCUENTA_EUROS,
+												  CIEN_EUROS, DOSCIENTOS_EUROS, QUINIENTOS_EUROS });
 		
 		set<Moneda> getMonedas() const;
 		Solucion getSolucion() const;

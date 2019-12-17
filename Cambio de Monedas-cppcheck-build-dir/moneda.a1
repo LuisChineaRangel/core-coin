@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3613068727">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getValor" lineNumber="28"/>
+    <functioncall functionName="CENTIMO"/>
+    <functioncall functionName="EURO"/>
+    <functioncall functionName="Moneda"/>
+    <functioncall functionName="ValorNegativo"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="getValor"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="valor"/>
+  </FileInfo>
+</analyzerinfo>

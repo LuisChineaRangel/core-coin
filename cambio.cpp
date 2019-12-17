@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 				case 4:
 					monedas = monstruoVoraz.getMonedas();
 					cout << "Disponemos de monedas de: ";
-					for (set<Moneda>::iterator it = monedas.begin(); it != monedas.end(); it++) {
+					for (set<Moneda>::iterator it = monedas.begin(); it != monedas.end(); ++it) {
 						cout << (*it);
 						if (it != prev(monedas.end()))
 							cout << ", ";

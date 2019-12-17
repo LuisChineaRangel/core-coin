@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="358524274">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="clean" lineNumber="21"/>
+    <functiondecl functionName="getCantidad" lineNumber="29"/>
+    <functiondecl functionName="getCantidadMonedas" lineNumber="31"/>
+    <functiondecl functionName="getMonedas" lineNumber="33"/>
+    <functiondecl functionName="insertarMoneda" lineNumber="37"/>
+    <functioncall functionName="Solucion"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="cantidad_"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="getCantidad"/>
+    <functioncall functionName="getCantidadMonedas"/>
+    <functioncall functionName="getMonedas"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="moneda"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="size"/>
+  </FileInfo>
+</analyzerinfo>
