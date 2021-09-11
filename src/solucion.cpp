@@ -1,18 +1,13 @@
 /// @file solucion.cpp
-/// @brief Clase Solucion. Representa una solución al cambio de monedas
+/// @brief Clase Solucion. Representa una soluciï¿½n al cambio de monedas
 /// @author Luis Marcelo Chinea Rangel\n
-/// Correo: alu0101118116@ull.es \n
+/// Correo: alu0101118116@ull.edu.es \n
 /// Universidad de La Laguna \n
-/// Escuela Superior de Ingeniería y Tecnología\n
-/// Grado en Ingeniería Informática\n
-/// Asignatura: Computabilidad y Algoritmia (CyA)\n
-/// Curso: 2º\n
-/// Práctica #12: Algoritmos Voraces (Greedy)
+/// Escuela Superior de Ingeniera y Tecnologaa\n
+/// Grado en Ingenieria Informatica\n
 /// @date 11/12/2019
-/// @see Enunciado de la práctica:
-/// https://campusvirtual.ull.es/1920/mod/assign/view.php?id=21020
 //////////////////////////////////////////////////////////////////
-#include "solucion.hpp"
+#include "../include/solucion.hpp"
 
 /// @brief Constructor por defecto.
 Solucion::Solucion() : cantidad_(0) {}
@@ -25,14 +20,14 @@ void Solucion::clean()
 	conjunto_.second.clear();
 }
 
-/// @brief Getter de la cantidad de monedas de la solución.
+/// @brief Getter de la cantidad de monedas de la soluciï¿½n.
 unsigned int Solucion::getCantidad() const { return cantidad_; }
 /// @brief Getter de las cantidades de cada tipo de monedas.
-vector<unsigned int> Solucion::getCantidadMonedas() const { return conjunto_.first; }
-/// @brief Getter de los tipos de monedas de la solución.
-vector<Moneda> Solucion::getMonedas() const { return conjunto_.second; }
+std::vector<unsigned int> Solucion::getCantidadMonedas() const { return conjunto_.first; }
+/// @brief Getter de los tipos de monedas de la soluciï¿½n.
+std::vector<Moneda> Solucion::getMonedas() const { return conjunto_.second; }
 
-/// @brief Inserta una moneda (nueva o ya existente) en la solución.
+/// @brief Inserta una moneda (nueva o ya existente) en la soluciï¿½n.
 /// @param moneda Moneda a insertar
 void Solucion::insertarMoneda(const Moneda& moneda)
 {
@@ -50,10 +45,10 @@ void Solucion::insertarMoneda(const Moneda& moneda)
 }
 
 /// @brief Sobrecarga del operador de salida.
-ostream& operator<<(ostream& os, const Solucion& solucion)
+std::ostream& operator<<(std::ostream& os, const Solucion& solucion)
 {
-	vector<unsigned int> cantidades = solucion.getCantidadMonedas();
-	vector<Moneda> monedas = solucion.getMonedas();
+	std::vector<unsigned int> cantidades = solucion.getCantidadMonedas();
+	std::vector<Moneda> monedas = solucion.getMonedas();
 	if (!monedas.empty()) {
 		os << "Solucion: {";
 		for (size_t i = 0; i < monedas.size(); i++)  {
@@ -64,7 +59,7 @@ ostream& operator<<(ostream& os, const Solucion& solucion)
 			if (i != monedas.size() - 1)
 				os << ", ";
 		}
-		os << "}" << endl;
+		os << "}" << std::endl;
 	}
 	os << "Total de monedas: " << solucion.getCantidad();
 	return os;

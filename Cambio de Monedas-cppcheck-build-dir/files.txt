@@ -1,4 +1,0 @@
-cambio.a1::cambio.cpp
-greedy.a1::greedy.cpp
-moneda.a1::moneda.cpp
-solucion.a1::solucion.cpp
