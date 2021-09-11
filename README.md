@@ -79,11 +79,12 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 Once launched, it will display an interactive menu with all the program features:
-	⋅⋅* Calculate the change for a requested amount
-	⋅⋅* Show last change
-	⋅⋅* View all coin types availables
-	⋅⋅* Insert new coins to the algorithm
-	⋅⋅* Exit
+
+* Calculate the change for a requested amount
+* Show last change
+* View all coin types availables
+* Insert new coins to the algorithm
+* Exit
 
 ## Contact
 
