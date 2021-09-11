@@ -1,54 +1,51 @@
 /// @file greedy.cpp
-/// @brief Clase Greedy. Representa un algoritmo
-/// voraz (Greedy) para calcular el cambio �ptimo de monedas
+/// @brief Greedy Class Definition
 /// @author Luis Marcelo Chinea Rangel\n
-/// Correo: alu0101118116@ull.edu.es \n
-/// Universidad de La Laguna \n
-/// Escuela Superior de Ingeniera y Tecnologaa\n
-/// Grado en Ingenieria Informatica\n
+/// E-mail: alu0101118116@ull.edu.es \n
+/// University of La Laguna \n
+/// School of Engineering and Technology\n
+/// Computer Engineering\n
+//////////////////////////////////////////////////////////////////
 /// @date 11/12/2019
 //////////////////////////////////////////////////////////////////
 #include "../include/greedy.hpp"
 
-/// @brief Constructor parametrizado. Recibe un conjunto de monedas para almacenarlas 
-/// en el programa, cambiando la configuraci�n por defecto.
-/// @param monedas Conjunto de Monedas a guardar.
-Greedy::Greedy(const std::set<Moneda>& monedas) : monedas_(monedas) {}
+/// @brief Parameterized Constructor. Receives the set with all types of coins availables
+/// @param coins Set of coins
+Greedy::Greedy(const std::set<Coin>& coins) : coins_(coins) {}
 
-/// @brief Getter del Conjunto de Monedas.
-std::set<Moneda> Greedy::getMonedas() const { return monedas_; }
-/// @brief Getter de la �ltima soluci�n guardada.
-Solucion Greedy::getSolucion() const { return solucion_; }
+std::set<Coin> Greedy::getCoins() const { return coins_; }
+Change Greedy::getChange() const { return change_; }
 
-/// @brief Calcular el cambio, con el m�nimo n� de monedas, de un importe solicitado.
-/// @param aDevolver Importe a cambiar.
-Solucion Greedy::devolver_cambio(float aDevolver) {
-	solucion_.clean();
-	float suma = 0;
-	while (suma != aDevolver) {
-		Moneda moneda(0);
-		for(std::set<Moneda>::reverse_iterator it = monedas_.rbegin(); it != monedas_.rend(); ++it) {
-			float resultado = suma + (*it).getValor();
-			if ((moneda < (*it)) && ((fabs(resultado - aDevolver) < EPSILON) || ((aDevolver - resultado) > EPSILON))) {
-				moneda = (*it);
+/// @brief Calculates solution for change to return
+/// @param toChange Amount of money to change
+Change Greedy::returnChange(float toChange) {
+	change_.clean();
+	float sum = 0;
+	while (sum != toChange) {
+		Coin coin(0);
+		for(std::set<Coin>::reverse_iterator it = coins_.rbegin(); it != coins_.rend(); ++it) {
+			float result = sum + (*it).getValue();
+			if ((coin < (*it)) && ((fabs(result - toChange) < EPSILON) || ((toChange - result) > EPSILON))) {
+				coin = (*it);
 				break;
 			}
 		}
-		if (moneda.getValor() == 0)
-			throw NoSolucion();
+		if (coin.getValue() == 0)
+			throw NoSolution();
 			
-		solucion_.insertarMoneda(moneda);
-		suma += moneda.getValor();
+		change_.insertCoin(coin);
+		sum += coin.getValue();
 	}
-	return solucion_;
+	return change_;
 }
 
-/// @brief Insertar una nueva moneda a nuestro conjunto de monedas disponibles.
-/// @param moneda Nueva moneda disponible
-void Greedy::insertarMoneda(const Moneda moneda) { monedas_.insert(moneda); }
+/// @brief Insertar una nueva coin a nuestro conjunto de coins disponibles.
+/// @param coin Nueva coin disponible
+void Greedy::insertCoin(const Coin coin) { coins_.insert(coin); }
 
 /// @brief Sobrecarga del operador de salida
 std::ostream& operator<<(std::ostream& os, const Greedy& voraz) {
-	os << voraz.getSolucion();
+	os << voraz.getChange();
 	return os;
 }

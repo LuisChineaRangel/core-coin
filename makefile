@@ -1,32 +1,43 @@
-# Luis Marcelo Chinea Rangel
-# Computabilidad y Algoritmia
-#---------------------------
-# Makefile
-#---------------------------
+#################################################
+# MAKEFILE
+#################################################
 
-# Compilador
-CXX=g++
+CXX		 := g++
+CXXFLAGS := -std=c++11
 
-# Flasgs del compilador
-CXXFLAGS=-std=c++11
+BIN     := bin
+SRC     := src
+BUILD	:= build
+INCLUDE := include
+LIB     := lib
+LIBRARIES   := 
+EXECUTABLE  := Change
 
-# Ficheros fuente
-SRC=cambio.cpp greedy.cpp solucion.cpp moneda.cpp
+SOURCES := $(wildcard $(SRC)/*.cpp)
+OBJS	:= $(patsubst $(SRC)/%.cpp,$(BUILD)/%.o,$(SOURCES))
 
-# Objetos
-OBJS=$(SRC:.cpp=.o)
+.PHONY: all project run clean
 
-all: Cambio
+all: $(BIN)/$(EXECUTABLE)
 
-# Compila el programa
-Cambio: $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o Cambio
-	
-cambio.o: cambio.cpp greedy.o
-greedy.o: greedy.cpp solucion.o
-solucion.o: solucion.cpp moneda.o
-moneda.o: moneda.cpp
+$(BIN)/$(EXECUTABLE): $(OBJS)
+	@echo "🚧 Building..."
+	$(CXX) -o $@ $(CXXFLAGS) -L$(LIB) $(OBJS)
+
+$(BUILD)/%.o: $(SRC)/%.cpp
+	@echo "🚧 Building..."
+	$(CXX) -c -o $@ $(CXXFLAGS) $<
+
+project:
+	clear
+	@echo "📁 Creating Project Structure..."
+	mkdir -p bin build include src
+
+run:
+	clear
+	@echo "🚀 Executing..."
+	./$(BIN)/$(EXECUTABLE)
 
 clean:
-	@echo "Limpiando todo..."
-	@find . -name "*.o" -type f -delete
+	@echo "🧹 Clearing..."
+	rm -f $(BIN)/* $(BUILD)/*

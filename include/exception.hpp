@@ -1,29 +1,26 @@
-/// @file exception.h
-/// @brief Excepciones para el correcto Funcionamiento del Programa
+/// @file exception.hpp
+/// @brief Customized exceptions for correct performance of the program
 /// @author Luis Marcelo Chinea Rangel\n
-/// Correo: alu0101118116@ull.edu.es \n
-/// Universidad de La Laguna \n
-/// Escuela Superior de Ingeniera y Tecnologaa\n
-/// Grado en Ingenieria Informatica\n
+/// E-mail: alu0101118116@ull.edu.es \n
+/// University of La Laguna \n
+/// School of Engineering and Technology\n
+/// Computer Engineering\n
+//////////////////////////////////////////////////////////////////
 /// @date 11/12/2019
 //////////////////////////////////////////////////////////////////
 #pragma once
 #include <exception>
 
-/// @class ValorNegativo
-/// @brief Excepcion en el caso de que se introduzca una moneda de valor negativo.
-class ValorNegativo : public std::exception {
+/// @class Negative Value
+/// @brief Exception Object in case a coin has a negativa value
+class NegativeValue : public std::exception {
   public:
-    virtual const char* what() const throw() {
-      return "VALOR DE MONEDA NEGATIVO!";
-    }
+    virtual const char* what(void) const throw();
 };
 
-/// @class NoSolucion
-/// @brief Excepcion en el caso de que no se halle una solucion.
-class NoSolucion : public std::exception {
+/// @class NoSolution
+/// @brief Exception Object in case there is no change available
+class NoSolution : public std::exception {
   public:
-    virtual const char* what() const throw() {
-      return "No disponemos del cambio para su importe.\nIntroduzca mas tipos de monedas al programa.";
-    }
+    virtual const char* what(void) const throw();
 };
