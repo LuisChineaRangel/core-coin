@@ -4,7 +4,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Money Change</h3>
+  <h3 align="center">Core Coin</h3>
 
   <p align="center">
     The perfect tool to optimize your money!
