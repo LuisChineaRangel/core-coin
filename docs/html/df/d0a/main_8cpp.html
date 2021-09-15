@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Money Change: src/main.cpp File Reference</title>
+<title>Core Coin: src/main.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Money Change<span id="projectnumber">&#160;1.2</span>
+   <div id="projectname">Core Coin<span id="projectnumber">&#160;1.2</span>
    </div>
    <div id="projectbrief">A simple money management tool</div>
   </td>
@@ -101,15 +101,16 @@ $(document).ready(function(){initNavTree('df/d0a/main_8cpp.html','../../'); init
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using the defined classes, Core <a class="el" href="../../df/d08/class_coin.html" title="Represents a coin with a specified float value.">Coin</a> launches an interactive menu with all the options to calculate and display the solution for a change of money.  <a href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Main File Functions</div></td></tr>
 <tr class="memitem:a0bed8474bd33a912769360766f6b10d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a0bed8474bd33a912769360766f6b10d4">help</a> (void)</td></tr>
 <tr class="memdesc:a0bed8474bd33a912769360766f6b10d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">User Guide.  <a href="../../df/d0a/main_8cpp.html#a0bed8474bd33a912769360766f6b10d4">More...</a><br /></td></tr>
 <tr class="separator:a0bed8474bd33a912769360766f6b10d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a518288848eb2471573b6581060452931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a518288848eb2471573b6581060452931">error</a> (void)</td></tr>
 <tr class="memdesc:a518288848eb2471573b6581060452931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message.  <a href="../../df/d0a/main_8cpp.html#a518288848eb2471573b6581060452931">More...</a><br /></td></tr>
 <tr class="separator:a518288848eb2471573b6581060452931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
-<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using the defined classes, the program launches an interactive menu with all the options to calculate and display the solution for a change of money.  <a href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
-<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -119,7 +120,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Program Main File. </p>
-<p >Contains all features and options </p>
+<p >Controls all objects, options, errors and exceptions in order to display all features of Core <a class="el" href="../../df/d08/class_coin.html" title="Represents a coin with a specified float value.">Coin</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a518288848eb2471573b6581060452931" name="a518288848eb2471573b6581060452931"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a518288848eb2471573b6581060452931">&#9670;&nbsp;</a></span>error()</h2>
@@ -138,6 +139,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Error message. </p>
+<p >For unknown commands, displays an error message showing information of all possible options </p><dl class="section return"><dt>Returns</dt><dd>Void </dd></dl>
 
 </div>
 </div>
@@ -158,6 +160,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>User Guide. </p>
+<p >Shows message explaining all Core <a class="el" href="../../df/d08/class_coin.html" title="Represents a coin with a specified float value.">Coin</a> features </p><dl class="section return"><dt>Returns</dt><dd>Void </dd></dl>
 
 </div>
 </div>
@@ -187,7 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Using the defined classes, the program launches an interactive menu with all the options to calculate and display the solution for a change of money. </p>
+<p>Using the defined classes, Core <a class="el" href="../../df/d08/class_coin.html" title="Represents a coin with a specified float value.">Coin</a> launches an interactive menu with all the options to calculate and display the solution for a change of money. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td>Argument Number </td></tr>
@@ -195,8 +198,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p >Argument Handler</p>
-<p >Interactive Menu</p>
+<dl class="section return"><dt>Returns</dt><dd>Exit Code </dd></dl>
 
 </div>
 </div>
