@@ -41,7 +41,7 @@
   </ol>
 </details>
 
-## About of the Project
+## About the Project
 
 This project was born to find a solution for the coins change problem using greedy algorithms. There were added custom functions added to modify the types of coins used, show the last change calculated and precision measurements to control float numbers data loss.
 
@@ -68,6 +68,7 @@ This is an example of how to list things you need to use the software and how to
 1. Clone the repo
    ```sh
    git clone https://github.com/LuismGH/Money-Change
+   ```
 2. Compile
    ```sh
    make

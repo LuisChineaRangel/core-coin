@@ -1,18 +1,17 @@
-/// @file exception.hpp
-/// @brief Customized exceptions for correct performance of the program
-/// @author Luis Marcelo Chinea Rangel\n
-/// E-mail: alu0101118116@ull.edu.es \n
-/// University of La Laguna \n
-/// School of Engineering and Technology\n
-/// Computer Engineering\n
-//////////////////////////////////////////////////////////////////
-/// @date 11/12/2019
-//////////////////////////////////////////////////////////////////
+/// @file exception.cpp
+/// @brief Customized Exceptions Headers
+
 #pragma once
 #include <exception>
 
 /// @class Negative Value
-/// @brief Exception Object in case a coin has a negativa value
+/// @brief Exception Object in case a coin has a negative value
+/// ### Example
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+/// Coin euro(-5);
+/// if (euro.getValue() < 0)
+///   throw NegativeValue();
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class NegativeValue : public std::exception {
   public:
     virtual const char* what(void) const throw();
@@ -20,6 +19,12 @@ class NegativeValue : public std::exception {
 
 /// @class NoSolution
 /// @brief Exception Object in case there is no change available
+/// ### Example
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+/// Coin money(5); Coin change_av(2);
+/// if (money - change_av > 0)
+///   throw NoSolution();
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class NoSolution : public std::exception {
   public:
     virtual const char* what(void) const throw();

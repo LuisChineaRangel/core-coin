@@ -20,24 +20,24 @@ Change Greedy::getChange() const { return change_; }
 /// @brief Calculates solution for change to return
 /// @param toChange Amount of money to change
 Change Greedy::returnChange(float toChange) {
-	change_.clean();
-	float sum = 0;
-	while (sum != toChange) {
-		Coin coin(0);
-		for(std::set<Coin>::reverse_iterator it = coins_.rbegin(); it != coins_.rend(); ++it) {
-			float result = sum + (*it).getValue();
-			if ((coin < (*it)) && ((fabs(result - toChange) < EPSILON) || ((toChange - result) > EPSILON))) {
-				coin = (*it);
-				break;
-			}
-		}
-		if (coin.getValue() == 0)
-			throw NoSolution();
-			
-		change_.insertCoin(coin);
-		sum += coin.getValue();
-	}
-	return change_;
+  change_.clean();
+  float sum = 0;
+  while (sum != toChange) {
+    Coin coin(0);
+    for(std::set<Coin>::reverse_iterator it = coins_.rbegin(); it != coins_.rend(); ++it) {
+      float result = sum + (*it).getValue();
+      if ((coin < (*it)) && ((fabs(result - toChange) < EPSILON) || ((toChange - result) > EPSILON))) {
+        coin = (*it);
+        break;
+      }
+    }
+    if (coin.getValue() == 0)
+      throw NoSolution();
+      
+    change_.insertCoin(coin);
+    sum += coin.getValue();
+  }
+  return change_;
 }
 
 /// @brief Insertar una nueva coin a nuestro conjunto de coins disponibles.
@@ -46,6 +46,6 @@ void Greedy::insertCoin(const Coin coin) { coins_.insert(coin); }
 
 /// @brief Sobrecarga del operador de salida
 std::ostream& operator<<(std::ostream& os, const Greedy& voraz) {
-	os << voraz.getChange();
-	return os;
+  os << voraz.getChange();
+  return os;
 }

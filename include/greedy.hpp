@@ -32,20 +32,20 @@ const float EPSILON = 1E-4;
 
 /// @class Greedy
 class Greedy {
-	private:
-		Change change_;				//!< Result of the algorithm
-		std::set<Coin> coins_;		//!< Set of all type of coins available
-		
-	public:
-		Greedy(const std::set<Coin>& = std::set<Coin> { ONE_CENT, TWO_CENTS, FIVE_CENTS, TEN_CENTS, 
-		                                          		TWENTY_CENTS, FIFTY_CENTS, ONE_EURO, TWO_EUROS, 
-	                                              		FIVE_EUROS, TEN_EUROS, TWENTY_EUROS } );
-		
-		std::set<Coin> getCoins(void) const;
-		Change getChange(void) const;
-		
-		Change returnChange(float);
-		void insertCoin(const Coin);
+  private:
+    Change change_;				//!< Result of the algorithm
+    std::set<Coin> coins_;		//!< Set of all type of coins available
+    
+  public:
+    Greedy(const std::set<Coin>& = std::set<Coin> { ONE_CENT, TWO_CENTS, FIVE_CENTS, TEN_CENTS, 
+                                                  TWENTY_CENTS, FIFTY_CENTS, ONE_EURO, TWO_EUROS, 
+                                                    FIVE_EUROS, TEN_EUROS, TWENTY_EUROS } );
+    
+    std::set<Coin> getCoins(void) const;
+    Change getChange(void) const;
+    
+    Change returnChange(float);
+    void insertCoin(const Coin);
 };
 
 /// Output operator Overload

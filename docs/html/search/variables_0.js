@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['long_5foptions_0',['long_options',['../df/d0a/main_8cpp.html#a3ca8454445b0739f5894088d4203319b',1,'main.cpp']]]
+  ['cent_0',['CENT',['../de/d9c/coin_8hpp.html#a1f003e5fed4a921e5d037a1d752b988e',1,'coin.hpp']]]
 ];

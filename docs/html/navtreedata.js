@@ -26,13 +26,22 @@ var NAVTREE =
 [
   [ "Money Change", "index.html", [
     [ "About of the Project", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md2", [
-        [ "Built With", "index.html#autotoc_md1", null ],
-        [ "Prerequisites", "index.html#autotoc_md3", null ],
-        [ "Installation", "index.html#autotoc_md4", null ]
+      [ "Getting Started", "index.html#autotoc_md5", [
+        [ "Built With", "index.html#autotoc_md4", null ],
+        [ "Prerequisites", "index.html#autotoc_md6", null ],
+        [ "Installation", "index.html#autotoc_md7", null ]
       ] ],
-      [ "Usage", "index.html#autotoc_md5", null ],
-      [ "Contact", "index.html#autotoc_md6", null ]
+      [ "Usage", "index.html#autotoc_md8", null ],
+      [ "Contact", "index.html#autotoc_md9", null ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -47,7 +56,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"d6/d6e/change_8cpp.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
