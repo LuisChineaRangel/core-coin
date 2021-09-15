@@ -27,6 +27,13 @@ std::set<Coin> Greedy::getCoins() const { return coins_; }
 /// @return Last Solution calculated
 Change Greedy::getChange() const { return change_; }
 
+/// @brief Clean Method. Resets all values
+/// @return Void
+void Greedy::clear(void) { 
+  change_.clear(); 
+  coins_ = std::set<Coin>{};
+}
+
 /// @brief Calculates solution for change to return
 /// @param toChange Amount of money to change
 /// @return Solution calculated
