@@ -1,39 +1,62 @@
 /// @file coin.hpp
-/// @brief Coin Class. Represents a coin with a specified value
-/// @author Luis Marcelo Chinea Rangel\n
-/// E-mail: alu0101118116@ull.edu.es \n
-/// University of La Laguna \n
-/// School of Engineering and Technology\n
-/// Computer Engineering\n
-//////////////////////////////////////////////////////////////////
-/// @date 11/12/2019
-//////////////////////////////////////////////////////////////////
+/// @brief Coin Class Header
 #pragma once
 #include <iostream>
 #include <string>
 
 #include "exception.hpp"
 
-/// Coin Types
+/** @name Coin Types */
+/// @{
 const std::string CENT = "c";
 const std::string EURO = "Euro";
+/// @}
 
 /// @class Coin
-/// @brief Coin with a value with logical and arithmetic operators
+/// @brief Represents a coin with a specified float value. It can be used to represent different coin systems acrros 
+/// the world like euros, dollars or pounds.
+/// ### Example
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+/// Coin* euro = new Coin(1);
+/// Coin bill = *euro * 25;
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Coin {
-	private:
-		float value_;	//!< Coin Value
+  private:
+    /// Coin's economic value
+    float value_;
 
-	public:
-		Coin(float = 0);
-		
-		/// Operators Overload
-		float getValue(void) const;
-		bool operator<(const Coin&) const;
-		bool operator<=(const Coin&) const;
-		bool operator==(const Coin&) const;
-		Coin operator+(const Coin&) const;
+  public:
+    /** @name Constructors and Destructor */
+    /// @{
+    Coin(float = 0);
+    ~Coin();
+    /// @}
+    
+    /** @name Getters and Setters */
+    /// @{
+    float getValue(void) const;
+    void setValue(float);
+    /// @}
+
+    /** @name Logical Operators Overloading */
+    /// @{
+    bool operator<(const Coin&) const;
+    bool operator<=(const Coin&) const;
+    bool operator>(const Coin&) const;
+    bool operator>=(const Coin&) const;
+    bool operator==(const Coin&) const;
+    /// @}
+
+    /** @name Arithmetic Operators Overloading */
+    /// @{
+    Coin operator+(const Coin&) const;
+    Coin operator-(const Coin&) const;
+    /// @}
+
+    /** @name Auxiliar Public Functions */
+    /// @{
+    void clear(void);
+    /// @}
 };
 
-/// Output operator Overload
 std::ostream& operator<<(std::ostream&, const Coin&);
