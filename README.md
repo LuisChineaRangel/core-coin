@@ -45,7 +45,9 @@
 
 ## About the Project
 
-This project was born to find a solution for the coins change problem using greedy algorithms. There were added custom functions added to modify the types of coins used, show the last change calculated and precision measurements to control float numbers data loss.
+Core Coin was born to find a solution for the coins change problem using greedy algorithms. There were added custom functions added to modify the types of coins used, show the last change calculated and precision measurements to control float numbers data loss.
+
+New features are currently being developed.
 
 ### Written In
 
