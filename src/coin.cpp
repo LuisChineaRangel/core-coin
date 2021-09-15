@@ -66,7 +66,7 @@ Coin Coin::operator+(const Coin& other) const { return Coin(getValue() + other.g
 /// @return The result of adding this coin minus other
 Coin Coin::operator-(const Coin& other) const { return Coin(getValue() - other.getValue()); }
 
-/// @brief Private Clean Method. Resets all values
+/// @brief Clean Method. Resets all values
 /// @return Void
 void Coin::clear(void) { value_ = 0; }
 

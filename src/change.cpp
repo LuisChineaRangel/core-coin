@@ -2,22 +2,45 @@
 /// @brief Change Class Source Code
 #include "../include/change.hpp"
 
-/// @brief Default Constructor
+///////////////////////////////////////////////////////
+// CLASS MEMBER FUNCTIONS
+///////////////////////////////////////////////////////
+
+/// @brief Default Constructor. 
+///
+/// Initializes total amount to 0
 Change::Change(void) : amount_(0) {}
 
-/// @brief Cleans all atrributes
-void Change::clean(void) {
+/// @brief Destructor
+///
+/// Erases all contents and destroys solution
+Change::~Change() {
+  clear();
+}
+
+/// @brief Amount Getter
+/// @return Total Amount of coins
+unsigned Change::getAmount(void) const { return amount_; }
+
+/// @brief AmountEachType Getter
+/// @return Set with the amounts of each money
+std::vector<unsigned> Change::getAmountEachType(void) const { return change_.first; }
+
+/// @brief Coins Getter
+/// @return Set with all types of coins
+std::vector<Coin> Change::getCoins(void) const { return change_.second; }
+
+/// @brief Clean Method. Resets all values
+/// @return Void
+void Change::clear(void) {
   amount_ = 0;
   change_.first.clear();
   change_.second.clear();
 }
 
-unsigned Change::getAmount(void) const { return amount_; }
-std::vector<unsigned> Change::getAmountEachType(void) const { return change_.first; }
-std::vector<Coin> Change::getCoins(void) const { return change_.second; }
-
 /// @brief Inserts a new Coin in the set. If it already exists, the amount of that coin will be increased by one
 /// @param coin Coin to Insert
+/// @return Void
 void Change::insertCoin(const Coin& coin) {
   if (find(change_.second.begin(), change_.second.end(), coin) == change_.second.end()) {
     change_.first.push_back(1);
@@ -32,7 +55,14 @@ void Change::insertCoin(const Coin& coin) {
   amount_++;
 }
 
+///////////////////////////////////////////////////////
+// EXTERNAL FUNCTIONS
+///////////////////////////////////////////////////////
+
 /// @brief Output operator Overload
+/// @param os Outputstream which is going to write solution
+/// @param change Solution to write
+/// @return All the information about the solution
 std::ostream& operator<<(std::ostream& os, const Change& change) {
   std::vector<unsigned int> amounts = change.getAmountEachType();
   std::vector<Coin> coins = change.getCoins();

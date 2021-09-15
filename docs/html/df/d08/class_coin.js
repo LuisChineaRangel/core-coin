@@ -2,6 +2,7 @@ var class_coin =
 [
     [ "Coin", "df/d08/class_coin.html#a24e3ad73a1387c82a2a895ad7c85f780", null ],
     [ "~Coin", "df/d08/class_coin.html#ad0371a6d98c194a0f6de615206829b16", null ],
+    [ "clear", "df/d08/class_coin.html#a7ab2b2476e13c12b8763f28b3364eb26", null ],
     [ "getValue", "df/d08/class_coin.html#ad61877c6ab66822496b896ba34b05e87", null ],
     [ "operator+", "df/d08/class_coin.html#aad02f84b707c81950dc3b40da110c96d", null ],
     [ "operator-", "df/d08/class_coin.html#a4861f8e321a4ec96a5afa47c957fcb53", null ],

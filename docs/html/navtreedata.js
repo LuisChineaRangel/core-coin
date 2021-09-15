@@ -25,14 +25,14 @@
 var NAVTREE =
 [
   [ "Money Change", "index.html", [
-    [ "About of the Project", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md5", [
-        [ "Built With", "index.html#autotoc_md4", null ],
-        [ "Prerequisites", "index.html#autotoc_md6", null ],
-        [ "Installation", "index.html#autotoc_md7", null ]
+    [ "About the Project", "index.html", [
+      [ "Getting Started", "index.html#autotoc_md7", [
+        [ "Built With", "index.html#autotoc_md6", null ],
+        [ "Prerequisites", "index.html#autotoc_md8", null ],
+        [ "Installation", "index.html#autotoc_md9", null ]
       ] ],
-      [ "Usage", "index.html#autotoc_md8", null ],
-      [ "Contact", "index.html#autotoc_md9", null ]
+      [ "Usage", "index.html#autotoc_md10", null ],
+      [ "Contact", "index.html#autotoc_md11", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

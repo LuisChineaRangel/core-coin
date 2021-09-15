@@ -1,26 +1,37 @@
 /// @file greedy.cpp
-/// @brief Greedy Class Definition
-/// @author Luis Marcelo Chinea Rangel\n
-/// E-mail: alu0101118116@ull.edu.es \n
-/// University of La Laguna \n
-/// School of Engineering and Technology\n
-/// Computer Engineering\n
-//////////////////////////////////////////////////////////////////
-/// @date 11/12/2019
-//////////////////////////////////////////////////////////////////
+/// @brief Greedy Class Source Code
 #include "../include/greedy.hpp"
 
-/// @brief Parameterized Constructor. Receives the set with all types of coins availables
-/// @param coins Set of coins
+///////////////////////////////////////////////////////
+// CLASS MEMBER FUNCTIONS
+///////////////////////////////////////////////////////
+
+/// @brief Parameterized Constructor. 
+///
+/// Initializes the set of coins availables
+/// @param coins Types of coins availables. By default, it will be initialized as the EU Coins
 Greedy::Greedy(const std::set<Coin>& coins) : coins_(coins) {}
 
+/// @brief Destructor
+///
+/// Erases all contents and destroys greedy object
+Greedy::~Greedy() {
+  clear();
+}
+
+/// @brief Coins Getter
+/// @return Coin types Availables
 std::set<Coin> Greedy::getCoins() const { return coins_; }
+
+/// @brief Change Getter
+/// @return Last Solution calculated
 Change Greedy::getChange() const { return change_; }
 
 /// @brief Calculates solution for change to return
 /// @param toChange Amount of money to change
+/// @return Solution calculated
 Change Greedy::returnChange(float toChange) {
-  change_.clean();
+  change_.clear();
   float sum = 0;
   while (sum != toChange) {
     Coin coin(0);
@@ -40,12 +51,20 @@ Change Greedy::returnChange(float toChange) {
   return change_;
 }
 
-/// @brief Insertar una nueva coin a nuestro conjunto de coins disponibles.
-/// @param coin Nueva coin disponible
+/// @brief Inserts a new type of coin in the available set
+/// @param coin Coin to insert
+/// @return void
 void Greedy::insertCoin(const Coin coin) { coins_.insert(coin); }
 
-/// @brief Sobrecarga del operador de salida
-std::ostream& operator<<(std::ostream& os, const Greedy& voraz) {
-  os << voraz.getChange();
+///////////////////////////////////////////////////////
+// EXTERNAL FUNCTIONS
+///////////////////////////////////////////////////////
+
+/// @brief Output operator Overload
+/// @param os Outputstream which is going to write the solution calculated by greedy object
+/// @param greedy Greedy Calculator
+/// @return All the information about last solution
+std::ostream& operator<<(std::ostream& os, const Greedy& greedy) {
+  os << greedy.getChange();
   return os;
 }

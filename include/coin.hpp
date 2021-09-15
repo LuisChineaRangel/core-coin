@@ -53,8 +53,7 @@ class Coin {
     Coin operator-(const Coin&) const;
     /// @}
 
-  private:
-    /** @name Auxiliar Functions */
+    /** @name Auxiliar Public Functions */
     /// @{
     void clear(void);
     /// @}
