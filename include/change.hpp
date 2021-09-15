@@ -1,6 +1,7 @@
 /// @file change.hpp
 /// @brief Change Class Header
 #pragma once
+#include <set>
 #include <vector>
 #include <utility>
 #include <algorithm> 

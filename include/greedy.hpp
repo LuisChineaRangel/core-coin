@@ -1,7 +1,6 @@
 /// @file greedy.hpp
 /// @brief Greedy Class Header
 #pragma once
-#include <set>
 #include <cmath>
 
 #include "change.hpp"
