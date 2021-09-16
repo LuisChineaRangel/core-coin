@@ -4,7 +4,7 @@
 #pragma once
 #include <exception>
 
-/// @class Negative Value
+/// @class NegativeValue
 /// @brief Exception Object in case a coin has a negative value
 /// ### Example
 /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp

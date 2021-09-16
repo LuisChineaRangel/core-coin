@@ -6,6 +6,5 @@ var hierarchy =
       [ "NegativeValue", "d0/d6f/class_negative_value.html", null ],
       [ "NoSolution", "d0/d97/class_no_solution.html", null ]
     ] ],
-    [ "Greedy", "d2/d77/class_greedy.html", null ],
-    [ "Negative", "d8/dad/class_negative.html", null ]
+    [ "Greedy", "d2/d77/class_greedy.html", null ]
 ];
