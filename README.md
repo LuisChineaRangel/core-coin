@@ -103,4 +103,4 @@ Please report all bugs [here](https://github.com/LuismGH/Core-Coin/issues). If a
 
 Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - alu0101118116@ull.edu.es
 
-Project Link: [https://github.com/LuismGH/Money-Change](https://github.com/LuismGH/Money-Change)
+Project Link: [https://github.com/LuismGH/Core-Coin](https://github.com/LuismGH/Core-Coin)
