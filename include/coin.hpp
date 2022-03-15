@@ -8,8 +8,8 @@
 
 /** @name Coin Types */
 /// @{
-const std::string CENT = "c";
-const std::string EURO = "Euro";
+constexpr auto CENT = "c";
+constexpr auto EURO = "Euro";
 /// @}
 
 /// @class Coin

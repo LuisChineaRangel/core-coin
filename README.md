@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/LuismGH/Core-Coin">
+  <a href="https://github.com/iluzioDev/core-coin">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -9,14 +9,14 @@
   <p align="center">
     The perfect tool to optimize your money!
     <br />
-    <a href="https://github.com/LuismGH/Core-Coin"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iluzioDev/core-coin"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LuismGH/Core-Coin">View Demo</a>
+    <a href="https://github.com/iluzioDev/core-coin">View Demo</a>
     ·
-    <a href="https://github.com/LuismGH/Core-Coin/issues">Report Bug</a>
+    <a href="https://github.com/iluzioDev/core-coin/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LuismGH/Core-Coin/issues">Request Feature</a>
+    <a href="https://github.com/iluzioDev/core-coin/issues">Request Feature</a>
   </p>
 </p>
 
@@ -73,7 +73,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Download and Installation
 
-Latest release can be found at [here](https://github.com/LuismGH/Core-Coin/releases) as source code.
+Latest release can be found at [here](https://github.com/iluzioDev/core-coin/releases) as source code.
 
 1. Download latest release
 2. Compile
@@ -97,10 +97,10 @@ Once launched, it will display an interactive menu with all Core Coin features:
 
 ## Bugs
 
-Please report all bugs [here](https://github.com/LuismGH/Core-Coin/issues). If appropriate, please attach a small test volume which you think Core Coin isn't handling correctly.
+Please report all bugs [here](https://github.com/iluzioDev/core-coin/issues). If appropriate, please attach a small test volume which you think Core Coin isn't handling correctly.
 
 ## Contact
 
-Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - alu0101118116@ull.edu.es
+Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - luischinearangel@gmail.com
 
-Project Link: [https://github.com/LuismGH/Core-Coin](https://github.com/LuismGH/Core-Coin)
+Project Link: [https://github.com/iluzioDev/core-coin](https://github.com/iluzioDev/core-coin)

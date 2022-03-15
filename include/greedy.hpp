@@ -6,7 +6,7 @@
 #include "change.hpp"
 
 /// Precision constant
-const float EPSILON = 1E-4;
+constexpr auto EPSILON = 1E-4;
 
 /// @class Greedy
 /// @brief Change Calculator

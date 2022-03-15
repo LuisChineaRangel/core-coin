@@ -19,9 +19,8 @@ const Coin TWENTY_CENTS (0.20);
 const Coin FIFTY_CENTS (0.50);
 const Coin ONE_EURO (1);
 const Coin TWO_EUROS (2);
-const Coin FIVE_EUROS (5);
 
-const std::set<Coin> EU { ONE_CENT, TWO_CENTS, FIVE_CENTS, TEN_CENTS, TWENTY_CENTS, FIFTY_CENTS, ONE_EURO, TWO_EUROS, FIVE_EUROS };
+const std::set<Coin> EU { ONE_CENT, TWO_CENTS, FIVE_CENTS, TEN_CENTS, TWENTY_CENTS, FIFTY_CENTS, ONE_EURO, TWO_EUROS };
 /// @}
 
 /// @class Change
