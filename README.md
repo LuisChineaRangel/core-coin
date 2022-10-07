@@ -101,6 +101,6 @@ Please report all bugs [here](https://github.com/iluzioDev/core-coin/issues). If
 
 ## Contact
 
-Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - luischinearangel@gmail.com
+Luis Marcelo Chinea Rangel - luischinearangel@gmail.com
 
 Project Link: [https://github.com/iluzioDev/core-coin](https://github.com/iluzioDev/core-coin)
