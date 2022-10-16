@@ -26,23 +26,15 @@ var NAVTREE =
 [
   [ "Core Coin", "index.html", [
     [ "About the Project", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md7", [
-        [ "Built With", "index.html#autotoc_md6", null ],
-        [ "Prerequisites", "index.html#autotoc_md8", null ],
-        [ "Download and Installation", "index.html#autotoc_md9", null ]
+      [ "Getting Started", "index.html#autotoc_md3", [
+        [ "Written In", "index.html#autotoc_md1", null ],
+        [ "Built With", "index.html#autotoc_md2", null ],
+        [ "Prerequisites", "index.html#autotoc_md4", null ],
+        [ "Download and Installation", "index.html#autotoc_md5", null ]
       ] ],
-      [ "Usage", "index.html#autotoc_md10", null ],
-      [ "Bugs", "index.html#autotoc_md11", null ],
-      [ "Contact", "index.html#autotoc_md12", null ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
-      ] ]
+      [ "Usage", "index.html#autotoc_md6", null ],
+      [ "Bugs", "index.html#autotoc_md7", null ],
+      [ "Contact", "index.html#autotoc_md8", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -57,7 +49,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"change_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
