@@ -4,12 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.2.0] - 2019-12-16
+## [1.0.0] - 2021-09-12
 
-This is the project release version.
+Project release version.
 
 ### Changed
 
+- Fixed bugs with the interactive menu
 - Fixed precision errors in operations with floats.
 
 ### Removed
@@ -17,16 +18,11 @@ This is the project release version.
 - Makefile "run" target
 - Makefile "project" target
 
-## [1.0.0] - 2019-12-13
-
-### Changed
-- Fixed bugs with the interactive menu
-
 ## [Unreleased]
 
 ## [0.1.0] - 2019-12-12
 
-This is the alfa version
+Alpha version
 
 ### Added
 
