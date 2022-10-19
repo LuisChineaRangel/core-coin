@@ -1,12 +1,35 @@
-## Versiones
-###### 0.1 - 12/12/2019
+# Changelog
+All notable changes to this project will be documented in this file.
+ 
+The format is based on [Keep a Changelog](http://keepachangelog.com/)
+and this project adheres to [Semantic Versioning](http://semver.org/).
 
-Alfa Version. Precision errors reported.
+## [1.2.0] - 2019-12-16
 
-###### 1.0 - 13/12/2019
+This is the project release version.
 
-Final Version. Bugs Fixed.
+### Changed
 
-###### 1.2 - 16/12/2019
+- Fixed precision errors in operations with floats.
 
-Updated Version. Precision errors fixed.
+### Removed
+
+- Makefile "run" target
+- Makefile "project" target
+
+## [1.0.0] - 2019-12-13
+
+### Changed
+- Fixed bugs with the interactive menu
+
+## [Unreleased]
+
+## [0.1.0] - 2019-12-12
+
+This is the alfa version
+
+### Added
+
+- Integer and Float Calculator with interactive menu.
+- Readme now contains a summary and information of the project.
+- Changelog.
