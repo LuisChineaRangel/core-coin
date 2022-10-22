@@ -1,0 +1,57 @@
+\hypertarget{class_no_solution}{}\doxysection{No\+Solution Class Reference}
+\label{class_no_solution}\index{NoSolution@{NoSolution}}
+
+
+Exception Object in case there is no change available.  
+
+
+
+
+{\ttfamily \#include $<$exception.\+hpp$>$}
+
+Inheritance diagram for No\+Solution\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_no_solution}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{class_no_solution_aa4e80c140f3df16c398e56a4ed31ce95}{what}} (void) const  throw ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_no_solution}{No\+Solution}} Exception message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception Object in case there is no change available. 
+
+\hypertarget{class_no_solution_autotoc_md12}{}\doxyparagraph{Example}\label{class_no_solution_autotoc_md12}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_coin}{Coin}} money(5); \mbox{\hyperlink{class_coin}{Coin}} change\_av(2);}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (money -\/ change\_av > 0)}
+\DoxyCodeLine{  \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_no_solution}{NoSolution}}();}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_no_solution_aa4e80c140f3df16c398e56a4ed31ce95}\label{class_no_solution_aa4e80c140f3df16c398e56a4ed31ce95}} 
+\index{NoSolution@{NoSolution}!what@{what}}
+\index{what@{what}!NoSolution@{NoSolution}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ No\+Solution\+::what (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const throw ( ) \hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_no_solution}{No\+Solution}} Exception message. 
+
+\begin{DoxyReturn}{Returns}
+String with warning message reporting no change 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/exception.\+hpp\item 
+src/\mbox{\hyperlink{exception_8cpp}{exception.\+cpp}}\end{DoxyCompactItemize}

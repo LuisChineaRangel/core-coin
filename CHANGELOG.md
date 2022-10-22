@@ -4,13 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.0] - 2021-09-12
+## [1.0.0] - 2022-10-22
 
 Project release version.
 
+### Added
+
+- Documentation.
+
 ### Changed
 
-- Fixed bugs with the interactive menu
+- README sections.
+- Fixed bugs with the interactive menu.
 - Fixed precision errors in operations with floats.
 
 ### Removed

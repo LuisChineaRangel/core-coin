@@ -1,0 +1,44 @@
+\hypertarget{change_8hpp_source}{}\doxysection{change.\+hpp}
+\label{change_8hpp_source}\index{include/change.hpp@{include/change.hpp}}
+\mbox{\hyperlink{change_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <algorithm>} }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{coin_8hpp}{coin.hpp}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} \mbox{\hyperlink{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}{ONE\_CENT}} (0.01);}
+\DoxyCodeLine{15 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} TWO\_CENTS (0.02);}
+\DoxyCodeLine{16 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} FIVE\_CENTS (0.05);}
+\DoxyCodeLine{17 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} TEN\_CENTS (0.10);}
+\DoxyCodeLine{18 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} TWENTY\_CENTS (0.20);}
+\DoxyCodeLine{19 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} FIFTY\_CENTS (0.50);}
+\DoxyCodeLine{20 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} ONE\_EURO (1);}
+\DoxyCodeLine{21 \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}} TWO\_EUROS (2);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{const} std::set<Coin> EU \{ \mbox{\hyperlink{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}{ONE\_CENT}}, TWO\_CENTS, FIVE\_CENTS, TEN\_CENTS, TWENTY\_CENTS, FIFTY\_CENTS, ONE\_EURO, TWO\_EUROS \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{35 \textcolor{keyword}{class }\mbox{\hyperlink{class_change}{Change}} \{}
+\DoxyCodeLine{36   \textcolor{keyword}{private}:}
+\DoxyCodeLine{38     \textcolor{keywordtype}{unsigned} amount\_;}
+\DoxyCodeLine{40     std::pair<std::vector<unsigned>, std::vector<Coin>> change\_;}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_change_a35197b29d2fafc0275bcefae570cc3c2}{Change}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_change_a965c151534e9502e36bfcf527531cdc9}{\string~Change}}();}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{51     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{class_change_a46dcb4fb396f00e47b8f4f5eccbd9e74}{getAmount}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{52     std::vector<unsigned> \mbox{\hyperlink{class_change_ac350057db967cf469b80de36270c9af9}{getAmountEachType}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{53     std::vector<Coin> \mbox{\hyperlink{class_change_a6a659e46af96f2a53664cc1803f16ed2}{getCoins}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_change_a2328d3a60408bd8adb7de9a16c5f503c}{clear}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_change_ae799b9b7d9ec8863e35d6546dbf046bc}{insertCoin}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&);}
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 std::ostream\& \mbox{\hyperlink{change_8hpp_abb6cc08a81409aa58cfe50edfead57bd}{operator<<}}(std::ostream\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_change}{Change}}\&);}
+
+\end{DoxyCode}

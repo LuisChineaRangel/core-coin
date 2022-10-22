@@ -1,0 +1,40 @@
+\hypertarget{coin_8hpp_source}{}\doxysection{coin.\+hpp}
+\label{coin_8hpp_source}\index{include/coin.hpp@{include/coin.hpp}}
+\mbox{\hyperlink{coin_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}exception.hpp"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{11 \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} CENT = \textcolor{stringliteral}{"{}c"{}};}
+\DoxyCodeLine{12 \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} EURO = \textcolor{stringliteral}{"{}Euro"{}};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_coin}{Coin}} \{}
+\DoxyCodeLine{24   \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{keywordtype}{float} value\_;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28   \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_coin}{Coin}}(\textcolor{keywordtype}{float} = 0);}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_coin_ad0371a6d98c194a0f6de615206829b16}{\string~Coin}}();}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{37     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_coin_ad61877c6ab66822496b896ba34b05e87}{getValue}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coin_aaccc96c5ea30120d4a799cee5d7d0752}{setValue}}(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coin_aa5f424af6c2c9bfe4a6e5e242b2acefa}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{44     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coin_a12287ceff782188ada7b4e8ffed93bba}{operator<=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coin_a6ff11fa3c2459c88f18756235e3e1e53}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coin_a5d2be7f8536573ff26da64b9dff3e8bd}{operator>=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coin_a569185d858788db41fb8416de6ffdfa6}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{52     \mbox{\hyperlink{class_coin}{Coin}} \mbox{\hyperlink{class_coin_aad02f84b707c81950dc3b40da110c96d}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{53     \mbox{\hyperlink{class_coin}{Coin}} \mbox{\hyperlink{class_coin_a4861f8e321a4ec96a5afa47c957fcb53}{operator-\/}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coin_a7ab2b2476e13c12b8763f28b3364eb26}{clear}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 std::ostream\& \mbox{\hyperlink{coin_8hpp_ac8618a3604bb92c50e89fe59d11d053c}{operator<<}}(std::ostream\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}}\&);}
+
+\end{DoxyCode}

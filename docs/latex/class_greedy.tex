@@ -1,0 +1,162 @@
+\hypertarget{class_greedy}{}\doxysection{Greedy Class Reference}
+\label{class_greedy}\index{Greedy@{Greedy}}
+
+
+\mbox{\hyperlink{class_change}{Change}} Calculator.  
+
+
+
+
+{\ttfamily \#include $<$greedy.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_greedy_a8bbba6c87ed9e558836a040d0a1a6a40}{Greedy}} (const std\+::set$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ \&=EU)
+\begin{DoxyCompactList}\small\item\em Parameterized Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_greedy_a0d51cf66b934aec2d1a834ea1c1feb1f}{$\sim$\+Greedy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::set$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ \mbox{\hyperlink{class_greedy_abc51c5dab2e881621ce393ff8985e9ad}{get\+Coins}} (void) const
+\begin{DoxyCompactList}\small\item\em Coins Getter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_change}{Change}} \mbox{\hyperlink{class_greedy_ae2830dc3dd3ce3bb4d3c2cb4cb5651a0}{get\+Change}} (void) const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_change}{Change}} Getter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Auxiliar Public Functions}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_greedy_ad39cdbe11ab71aea7fe1bfa2e8425a38}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clean Method. Resets all values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_greedy_ac8cd601c444bdb6775958f9013471074}{insert\+Coin}} (const \mbox{\hyperlink{class_coin}{Coin}})
+\begin{DoxyCompactList}\small\item\em Inserts a new type of coin in the available set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_change}{Change}} \mbox{\hyperlink{class_greedy_a0c6fd7f09cde4b2856b1a8151fc7ef6f}{return\+Change}} (float)
+\begin{DoxyCompactList}\small\item\em Calculates solution for change to return. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_change}{Change}} Calculator. 
+
+Uses a greedy algorithm to calculate the minimun change for a ceratin amount of money \hypertarget{class_greedy_autotoc_md13}{}\doxyparagraph{Example}\label{class_greedy_autotoc_md13}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_greedy}{Greedy}} machine;}
+\DoxyCodeLine{machine.getchange(0.50);}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_greedy_a8bbba6c87ed9e558836a040d0a1a6a40}\label{class_greedy_a8bbba6c87ed9e558836a040d0a1a6a40}} 
+\index{Greedy@{Greedy}!Greedy@{Greedy}}
+\index{Greedy@{Greedy}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{Greedy()}{Greedy()}}
+{\footnotesize\ttfamily Greedy\+::\+Greedy (\begin{DoxyParamCaption}\item[{const std\+::set$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ \&}]{coins = {\ttfamily EU} }\end{DoxyParamCaption})}
+
+
+
+Parameterized Constructor. 
+
+Initializes the set of coins availables 
+\begin{DoxyParams}{Parameters}
+{\em coins} & Types of coins availables. By default, it will be initialized as the EU Coins \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_greedy_a0d51cf66b934aec2d1a834ea1c1feb1f}\label{class_greedy_a0d51cf66b934aec2d1a834ea1c1feb1f}} 
+\index{Greedy@{Greedy}!````~Greedy@{$\sim$Greedy}}
+\index{````~Greedy@{$\sim$Greedy}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Greedy()}{~Greedy()}}
+{\footnotesize\ttfamily Greedy\+::$\sim$\+Greedy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Erases all contents and destroys greedy object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_greedy_ad39cdbe11ab71aea7fe1bfa2e8425a38}\label{class_greedy_ad39cdbe11ab71aea7fe1bfa2e8425a38}} 
+\index{Greedy@{Greedy}!clear@{clear}}
+\index{clear@{clear}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Greedy\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clean Method. Resets all values. 
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_greedy_ae2830dc3dd3ce3bb4d3c2cb4cb5651a0}\label{class_greedy_ae2830dc3dd3ce3bb4d3c2cb4cb5651a0}} 
+\index{Greedy@{Greedy}!getChange@{getChange}}
+\index{getChange@{getChange}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{getChange()}{getChange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_change}{Change}} Greedy\+::get\+Change (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_change}{Change}} Getter. 
+
+\begin{DoxyReturn}{Returns}
+Last Solution calculated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_greedy_abc51c5dab2e881621ce393ff8985e9ad}\label{class_greedy_abc51c5dab2e881621ce393ff8985e9ad}} 
+\index{Greedy@{Greedy}!getCoins@{getCoins}}
+\index{getCoins@{getCoins}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{getCoins()}{getCoins()}}
+{\footnotesize\ttfamily std\+::set$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ Greedy\+::get\+Coins (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Coins Getter. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_coin}{Coin}} types Availables 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_greedy_ac8cd601c444bdb6775958f9013471074}\label{class_greedy_ac8cd601c444bdb6775958f9013471074}} 
+\index{Greedy@{Greedy}!insertCoin@{insertCoin}}
+\index{insertCoin@{insertCoin}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{insertCoin()}{insertCoin()}}
+{\footnotesize\ttfamily void Greedy\+::insert\+Coin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}}}]{coin }\end{DoxyParamCaption})}
+
+
+
+Inserts a new type of coin in the available set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coin} & \mbox{\hyperlink{class_coin}{Coin}} to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_greedy_a0c6fd7f09cde4b2856b1a8151fc7ef6f}\label{class_greedy_a0c6fd7f09cde4b2856b1a8151fc7ef6f}} 
+\index{Greedy@{Greedy}!returnChange@{returnChange}}
+\index{returnChange@{returnChange}!Greedy@{Greedy}}
+\doxysubsubsection{\texorpdfstring{returnChange()}{returnChange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_change}{Change}} Greedy\+::return\+Change (\begin{DoxyParamCaption}\item[{float}]{to\+Change }\end{DoxyParamCaption})}
+
+
+
+Calculates solution for change to return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Change} & Amount of money to change \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Solution calculated 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{greedy_8hpp}{greedy.\+hpp}}\item 
+src/\mbox{\hyperlink{greedy_8cpp}{greedy.\+cpp}}\end{DoxyCompactItemize}

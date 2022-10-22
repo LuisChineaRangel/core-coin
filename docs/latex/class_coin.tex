@@ -1,0 +1,258 @@
+\hypertarget{class_coin}{}\doxysection{Coin Class Reference}
+\label{class_coin}\index{Coin@{Coin}}
+
+
+Represents a coin with a specified float value. It can be used to represent different coin systems acrros the world like euros, dollars or pounds.  
+
+
+
+
+{\ttfamily \#include $<$coin.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coin_a24e3ad73a1387c82a2a895ad7c85f780}{Coin}} (float=0)
+\begin{DoxyCompactList}\small\item\em Parameterized Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_coin_ad0371a6d98c194a0f6de615206829b16}{$\sim$\+Coin}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters and Setters}\par
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_coin_ad61877c6ab66822496b896ba34b05e87}{get\+Value}} (void) const
+\begin{DoxyCompactList}\small\item\em Value Getter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_coin_aaccc96c5ea30120d4a799cee5d7d0752}\label{class_coin_aaccc96c5ea30120d4a799cee5d7d0752}} 
+void {\bfseries set\+Value} (float)
+\begin{DoxyCompactList}\small\item\em Value Setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Logical Operators Overloading}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_coin_aa5f424af6c2c9bfe4a6e5e242b2acefa}{operator$<$}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Logical Operator \texorpdfstring{$<$}{<}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_coin_a12287ceff782188ada7b4e8ffed93bba}{operator$<$=}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Logical Operator \texorpdfstring{$<$}{<}=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_coin_a6ff11fa3c2459c88f18756235e3e1e53}{operator$>$}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Logical Operator \texorpdfstring{$>$}{>} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_coin_a5d2be7f8536573ff26da64b9dff3e8bd}{operator$>$=}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Logical Operator \texorpdfstring{$>$}{>}=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_coin_a569185d858788db41fb8416de6ffdfa6}{operator==}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Logical Operator ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Arithmetic Operators Overloading}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coin}{Coin}} \mbox{\hyperlink{class_coin_aad02f84b707c81950dc3b40da110c96d}{operator+}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Arithmetic Operator +. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_coin}{Coin}} \mbox{\hyperlink{class_coin_a4861f8e321a4ec96a5afa47c957fcb53}{operator-\/}} (const \mbox{\hyperlink{class_coin}{Coin}} \&) const
+\begin{DoxyCompactList}\small\item\em Arithmetic Operator -\/. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Auxiliar Public Functions}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_coin_a7ab2b2476e13c12b8763f28b3364eb26}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clean Method. Resets all values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a coin with a specified float value. It can be used to represent different coin systems acrros the world like euros, dollars or pounds. 
+
+\hypertarget{class_coin_autotoc_md10}{}\doxyparagraph{Example}\label{class_coin_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_coin}{Coin}}* euro = \textcolor{keyword}{new} \mbox{\hyperlink{class_coin}{Coin}}(1);}
+\DoxyCodeLine{\mbox{\hyperlink{class_coin}{Coin}} bill = *euro * 25;}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_coin_a24e3ad73a1387c82a2a895ad7c85f780}\label{class_coin_a24e3ad73a1387c82a2a895ad7c85f780}} 
+\index{Coin@{Coin}!Coin@{Coin}}
+\index{Coin@{Coin}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{Coin()}{Coin()}}
+{\footnotesize\ttfamily Coin\+::\+Coin (\begin{DoxyParamCaption}\item[{float}]{value = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Parameterized Constructor. 
+
+Receives the coin value and builds the object. Default value is 0. 
+\begin{DoxyParams}{Parameters}
+{\em value} & \mbox{\hyperlink{class_coin}{Coin}} Value to copy \\
+\hline
+\end{DoxyParams}
+Coins cannot have a negative value\mbox{\Hypertarget{class_coin_ad0371a6d98c194a0f6de615206829b16}\label{class_coin_ad0371a6d98c194a0f6de615206829b16}} 
+\index{Coin@{Coin}!````~Coin@{$\sim$Coin}}
+\index{````~Coin@{$\sim$Coin}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{$\sim$Coin()}{~Coin()}}
+{\footnotesize\ttfamily Coin\+::$\sim$\+Coin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Resets all attributes and destroys object. See also \mbox{\hyperlink{class_coin_a7ab2b2476e13c12b8763f28b3364eb26}{clear()}} function. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coin_a7ab2b2476e13c12b8763f28b3364eb26}\label{class_coin_a7ab2b2476e13c12b8763f28b3364eb26}} 
+\index{Coin@{Coin}!clear@{clear}}
+\index{clear@{clear}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Coin\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clean Method. Resets all values. 
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_ad61877c6ab66822496b896ba34b05e87}\label{class_coin_ad61877c6ab66822496b896ba34b05e87}} 
+\index{Coin@{Coin}!getValue@{getValue}}
+\index{getValue@{getValue}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily float Coin\+::get\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Value Getter. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_coin}{Coin}}\textquotesingle{}s Value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_aad02f84b707c81950dc3b40da110c96d}\label{class_coin_aad02f84b707c81950dc3b40da110c96d}} 
+\index{Coin@{Coin}!operator+@{operator+}}
+\index{operator+@{operator+}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coin}{Coin}} Coin\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Arithmetic Operator +. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_coin}{Coin}} to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of adding this coin plus other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_a4861f8e321a4ec96a5afa47c957fcb53}\label{class_coin_a4861f8e321a4ec96a5afa47c957fcb53}} 
+\index{Coin@{Coin}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coin}{Coin}} Coin\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Arithmetic Operator -\/. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{class_coin}{Coin}} to substract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of adding this coin minus other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_aa5f424af6c2c9bfe4a6e5e242b2acefa}\label{class_coin_aa5f424af6c2c9bfe4a6e5e242b2acefa}} 
+\index{Coin@{Coin}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Coin\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Logical Operator \texorpdfstring{$<$}{<}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Second coin to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coin value is smaller than the other coin, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_a12287ceff782188ada7b4e8ffed93bba}\label{class_coin_a12287ceff782188ada7b4e8ffed93bba}} 
+\index{Coin@{Coin}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Coin\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Logical Operator \texorpdfstring{$<$}{<}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Second coin to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coin value is smaller or equal than the other coin, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_a569185d858788db41fb8416de6ffdfa6}\label{class_coin_a569185d858788db41fb8416de6ffdfa6}} 
+\index{Coin@{Coin}!operator==@{operator==}}
+\index{operator==@{operator==}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Coin\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Logical Operator ==. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Second coin to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coin value is equal than the other coin, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_a6ff11fa3c2459c88f18756235e3e1e53}\label{class_coin_a6ff11fa3c2459c88f18756235e3e1e53}} 
+\index{Coin@{Coin}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Coin\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Logical Operator \texorpdfstring{$>$}{>} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Second coin to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coin value is greater than the other coin, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_coin_a5d2be7f8536573ff26da64b9dff3e8bd}\label{class_coin_a5d2be7f8536573ff26da64b9dff3e8bd}} 
+\index{Coin@{Coin}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Coin@{Coin}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Coin\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Logical Operator \texorpdfstring{$>$}{>}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Second coin to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coin value is greater or equal than the other coin, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{coin_8hpp}{coin.\+hpp}}\item 
+src/\mbox{\hyperlink{coin_8cpp}{coin.\+cpp}}\end{DoxyCompactItemize}

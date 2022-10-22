@@ -1,0 +1,82 @@
+\hypertarget{change_8hpp}{}\doxysection{include/change.hpp File Reference}
+\label{change_8hpp}\index{include/change.hpp@{include/change.hpp}}
+
+
+\mbox{\hyperlink{class_change}{Change}} Class Header.  
+
+
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}coin.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_change}{Change}}
+\begin{DoxyCompactList}\small\item\em Represents a solution for money change. It stores the amount of coins for solution and a pair of vectors containing all types of coins needed and their respectives amounts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{change_8hpp_abb6cc08a81409aa58cfe50edfead57bd}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_change}{Change}} \&)
+\begin{DoxyCompactList}\small\item\em Output operator Overload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{Indent}\textbf{ EU Official Coins}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}\label{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries ONE\+\_\+\+CENT} (0.\+01)
+\begin{DoxyCompactList}\small\item\em All types of coins existing in the European Union. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{change_8hpp_a334a9f3ced62dd6c7662985349267d10}\label{change_8hpp_a334a9f3ced62dd6c7662985349267d10}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries TWO\+\_\+\+CENTS} (0.\+02)
+\item 
+\mbox{\Hypertarget{change_8hpp_acd31f2e7d442e1df8180f23f1d57870b}\label{change_8hpp_acd31f2e7d442e1df8180f23f1d57870b}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries FIVE\+\_\+\+CENTS} (0.\+05)
+\item 
+\mbox{\Hypertarget{change_8hpp_ab5dd6aaa2e31b76b769e745cf29cc37b}\label{change_8hpp_ab5dd6aaa2e31b76b769e745cf29cc37b}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries TEN\+\_\+\+CENTS} (0.\+10)
+\item 
+\mbox{\Hypertarget{change_8hpp_adb87e73c66b1f8aeda5be72068e1b2a7}\label{change_8hpp_adb87e73c66b1f8aeda5be72068e1b2a7}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries TWENTY\+\_\+\+CENTS} (0.\+20)
+\item 
+\mbox{\Hypertarget{change_8hpp_ab962f834959edbf5490102cd379bdf6e}\label{change_8hpp_ab962f834959edbf5490102cd379bdf6e}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries FIFTY\+\_\+\+CENTS} (0.\+50)
+\item 
+\mbox{\Hypertarget{change_8hpp_a0804d86d8dd8974bebbc946ac5278c84}\label{change_8hpp_a0804d86d8dd8974bebbc946ac5278c84}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries ONE\+\_\+\+EURO} (1)
+\item 
+\mbox{\Hypertarget{change_8hpp_a06d544bc46857a6db2d1b1c8fce286e1}\label{change_8hpp_a06d544bc46857a6db2d1b1c8fce286e1}} 
+const \mbox{\hyperlink{class_coin}{Coin}} {\bfseries TWO\+\_\+\+EUROS} (2)
+\item 
+\mbox{\Hypertarget{change_8hpp_a2c362568abb77a88b5dba4d2a9e03aa2}\label{change_8hpp_a2c362568abb77a88b5dba4d2a9e03aa2}} 
+const std\+::set$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ {\bfseries EU} \{ \mbox{\hyperlink{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}{ONE\+\_\+\+CENT}}, TWO\+\_\+\+CENTS, FIVE\+\_\+\+CENTS, TEN\+\_\+\+CENTS, TWENTY\+\_\+\+CENTS, FIFTY\+\_\+\+CENTS, ONE\+\_\+\+EURO, TWO\+\_\+\+EUROS \}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_change}{Change}} Class Header. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{change_8hpp_abb6cc08a81409aa58cfe50edfead57bd}\label{change_8hpp_abb6cc08a81409aa58cfe50edfead57bd}} 
+\index{change.hpp@{change.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!change.hpp@{change.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_change}{Change}} \&}]{change }\end{DoxyParamCaption})}
+
+
+
+Output operator Overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Outputstream which is going to write solution \\
+\hline
+{\em change} & Solution to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All the information about the solution 
+\end{DoxyReturn}

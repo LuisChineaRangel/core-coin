@@ -1,0 +1,153 @@
+\hypertarget{class_change}{}\doxysection{Change Class Reference}
+\label{class_change}\index{Change@{Change}}
+
+
+Represents a solution for money change. It stores the amount of coins for solution and a pair of vectors containing all types of coins needed and their respectives amounts.  
+
+
+
+
+{\ttfamily \#include $<$change.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_change_a35197b29d2fafc0275bcefae570cc3c2}{Change}} (void)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_change_a965c151534e9502e36bfcf527531cdc9}{$\sim$\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{class_change_a46dcb4fb396f00e47b8f4f5eccbd9e74}{get\+Amount}} (void) const
+\begin{DoxyCompactList}\small\item\em Amount Getter. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned $>$ \mbox{\hyperlink{class_change_ac350057db967cf469b80de36270c9af9}{get\+Amount\+Each\+Type}} (void) const
+\begin{DoxyCompactList}\small\item\em Amount\+Each\+Type Getter. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ \mbox{\hyperlink{class_change_a6a659e46af96f2a53664cc1803f16ed2}{get\+Coins}} (void) const
+\begin{DoxyCompactList}\small\item\em Coins Getter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Auxiliar Public Functions}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_change_a2328d3a60408bd8adb7de9a16c5f503c}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clean Method. Resets all values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_change_ae799b9b7d9ec8863e35d6546dbf046bc}{insert\+Coin}} (const \mbox{\hyperlink{class_coin}{Coin}} \&)
+\begin{DoxyCompactList}\small\item\em Inserts a new \mbox{\hyperlink{class_coin}{Coin}} in the set. If it already exists, the amount of that coin will be increased by one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a solution for money change. It stores the amount of coins for solution and a pair of vectors containing all types of coins needed and their respectives amounts. 
+
+\hypertarget{class_change_autotoc_md9}{}\doxyparagraph{Example}\label{class_change_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_change}{Change}} solution;}
+\DoxyCodeLine{solution.\mbox{\hyperlink{class_change_ae799b9b7d9ec8863e35d6546dbf046bc}{insertCoin}}(\mbox{\hyperlink{change_8hpp_ae3d3e745b104b03ada5a27716acd5c97}{ONE\_CENT}});}
+\DoxyCodeLine{std::cout << solution;}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_change_a35197b29d2fafc0275bcefae570cc3c2}\label{class_change_a35197b29d2fafc0275bcefae570cc3c2}} 
+\index{Change@{Change}!Change@{Change}}
+\index{Change@{Change}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{Change()}{Change()}}
+{\footnotesize\ttfamily Change\+::\+Change (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Initializes total amount to 0 \mbox{\Hypertarget{class_change_a965c151534e9502e36bfcf527531cdc9}\label{class_change_a965c151534e9502e36bfcf527531cdc9}} 
+\index{Change@{Change}!````~Change@{$\sim$Change}}
+\index{````~Change@{$\sim$Change}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{$\sim$Change()}{~Change()}}
+{\footnotesize\ttfamily Change\+::$\sim$\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Erases all contents and destroys solution 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_change_a2328d3a60408bd8adb7de9a16c5f503c}\label{class_change_a2328d3a60408bd8adb7de9a16c5f503c}} 
+\index{Change@{Change}!clear@{clear}}
+\index{clear@{clear}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Change\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clean Method. Resets all values. 
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_a46dcb4fb396f00e47b8f4f5eccbd9e74}\label{class_change_a46dcb4fb396f00e47b8f4f5eccbd9e74}} 
+\index{Change@{Change}!getAmount@{getAmount}}
+\index{getAmount@{getAmount}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{getAmount()}{getAmount()}}
+{\footnotesize\ttfamily unsigned Change\+::get\+Amount (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Amount Getter. 
+
+\begin{DoxyReturn}{Returns}
+Total Amount of coins 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_ac350057db967cf469b80de36270c9af9}\label{class_change_ac350057db967cf469b80de36270c9af9}} 
+\index{Change@{Change}!getAmountEachType@{getAmountEachType}}
+\index{getAmountEachType@{getAmountEachType}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{getAmountEachType()}{getAmountEachType()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned $>$ Change\+::get\+Amount\+Each\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Amount\+Each\+Type Getter. 
+
+\begin{DoxyReturn}{Returns}
+Set with the amounts of each money 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_a6a659e46af96f2a53664cc1803f16ed2}\label{class_change_a6a659e46af96f2a53664cc1803f16ed2}} 
+\index{Change@{Change}!getCoins@{getCoins}}
+\index{getCoins@{getCoins}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{getCoins()}{getCoins()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_coin}{Coin}} $>$ Change\+::get\+Coins (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Coins Getter. 
+
+\begin{DoxyReturn}{Returns}
+Set with all types of coins 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_ae799b9b7d9ec8863e35d6546dbf046bc}\label{class_change_ae799b9b7d9ec8863e35d6546dbf046bc}} 
+\index{Change@{Change}!insertCoin@{insertCoin}}
+\index{insertCoin@{insertCoin}!Change@{Change}}
+\doxysubsubsection{\texorpdfstring{insertCoin()}{insertCoin()}}
+{\footnotesize\ttfamily void Change\+::insert\+Coin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{coin }\end{DoxyParamCaption})}
+
+
+
+Inserts a new \mbox{\hyperlink{class_coin}{Coin}} in the set. If it already exists, the amount of that coin will be increased by one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coin} & \mbox{\hyperlink{class_coin}{Coin}} to Insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{change_8hpp}{change.\+hpp}}\item 
+src/\mbox{\hyperlink{change_8cpp}{change.\+cpp}}\end{DoxyCompactItemize}

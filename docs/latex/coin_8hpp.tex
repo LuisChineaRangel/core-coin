@@ -1,0 +1,59 @@
+\hypertarget{coin_8hpp}{}\doxysection{include/coin.hpp File Reference}
+\label{coin_8hpp}\index{include/coin.hpp@{include/coin.hpp}}
+
+
+\mbox{\hyperlink{class_coin}{Coin}} Class Header.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}exception.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_coin}{Coin}}
+\begin{DoxyCompactList}\small\item\em Represents a coin with a specified float value. It can be used to represent different coin systems acrros the world like euros, dollars or pounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{coin_8hpp_ac8618a3604bb92c50e89fe59d11d053c}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_coin}{Coin}} \&)
+\begin{DoxyCompactList}\small\item\em Output operator Overload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{Indent}\textbf{ Coin Types}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{coin_8hpp_a6189d79660a32f134e964e2b25004044}\label{coin_8hpp_a6189d79660a32f134e964e2b25004044}} 
+constexpr auto {\bfseries CENT} = \char`\"{}c\char`\"{}
+\item 
+\mbox{\Hypertarget{coin_8hpp_a43f5f0122ef452dcfbb1227e03599597}\label{coin_8hpp_a43f5f0122ef452dcfbb1227e03599597}} 
+constexpr auto {\bfseries EURO} = \char`\"{}Euro\char`\"{}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_coin}{Coin}} Class Header. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{coin_8hpp_ac8618a3604bb92c50e89fe59d11d053c}\label{coin_8hpp_ac8618a3604bb92c50e89fe59d11d053c}} 
+\index{coin.hpp@{coin.hpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!coin.hpp@{coin.hpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_coin}{Coin}} \&}]{coin }\end{DoxyParamCaption})}
+
+
+
+Output operator Overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Outputstream which is going to write coin \\
+\hline
+{\em coin} & \mbox{\hyperlink{class_coin}{Coin}} to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All the information about the coin 
+\end{DoxyReturn}

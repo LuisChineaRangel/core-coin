@@ -1,0 +1,57 @@
+\hypertarget{class_negative_value}{}\doxysection{Negative\+Value Class Reference}
+\label{class_negative_value}\index{NegativeValue@{NegativeValue}}
+
+
+Exception Object in case a coin has a negative value.  
+
+
+
+
+{\ttfamily \#include $<$exception.\+hpp$>$}
+
+Inheritance diagram for Negative\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_negative_value}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{class_negative_value_ae2019a9108a859f6f03682cdf0908aa8}{what}} (void) const  throw ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_negative_value}{Negative\+Value}} Exception message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception Object in case a coin has a negative value. 
+
+\hypertarget{class_negative_value_autotoc_md11}{}\doxyparagraph{Example}\label{class_negative_value_autotoc_md11}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_coin}{Coin}} euro(-\/5);}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (euro.getValue() < 0)}
+\DoxyCodeLine{  \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_negative_value}{NegativeValue}}();}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_negative_value_ae2019a9108a859f6f03682cdf0908aa8}\label{class_negative_value_ae2019a9108a859f6f03682cdf0908aa8}} 
+\index{NegativeValue@{NegativeValue}!what@{what}}
+\index{what@{what}!NegativeValue@{NegativeValue}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Negative\+Value\+::what (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const throw ( ) \hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_negative_value}{Negative\+Value}} Exception message. 
+
+\begin{DoxyReturn}{Returns}
+String with error message reporting negative value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/exception.\+hpp\item 
+src/\mbox{\hyperlink{exception_8cpp}{exception.\+cpp}}\end{DoxyCompactItemize}

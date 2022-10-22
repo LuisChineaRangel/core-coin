@@ -1,0 +1,32 @@
+\hypertarget{greedy_8hpp_source}{}\doxysection{greedy.\+hpp}
+\label{greedy_8hpp_source}\index{include/greedy.hpp@{include/greedy.hpp}}
+\mbox{\hyperlink{greedy_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{change_8hpp}{change.hpp}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{9 \textcolor{keyword}{constexpr} \textcolor{keyword}{auto} \mbox{\hyperlink{greedy_8hpp_a6f9399eaf2efb1b12e797b77909df9ac}{EPSILON}} = 1E-\/4;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_greedy}{Greedy}} \{}
+\DoxyCodeLine{21   \textcolor{keyword}{private}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_change}{Change}} change\_;}
+\DoxyCodeLine{25     std::set<Coin> coins\_;}
+\DoxyCodeLine{26     }
+\DoxyCodeLine{27   \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_greedy}{Greedy}}(\textcolor{keyword}{const} std::set<Coin>\& = EU);}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_greedy_a0d51cf66b934aec2d1a834ea1c1feb1f}{\string~Greedy}}();}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{36     std::set<Coin> \mbox{\hyperlink{class_greedy_abc51c5dab2e881621ce393ff8985e9ad}{getCoins}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_change}{Change}} \mbox{\hyperlink{class_greedy_ae2830dc3dd3ce3bb4d3c2cb4cb5651a0}{getChange}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_greedy_ad39cdbe11ab71aea7fe1bfa2e8425a38}{clear}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_greedy_ac8cd601c444bdb6775958f9013471074}{insertCoin}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coin}{Coin}});}
+\DoxyCodeLine{44     \mbox{\hyperlink{class_change}{Change}} \mbox{\hyperlink{class_greedy_a0c6fd7f09cde4b2856b1a8151fc7ef6f}{returnChange}}(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 std::ostream\& \mbox{\hyperlink{greedy_8hpp_ab478d8c513844486ee37f80be9bb5dfc}{operator<<}}(std::ostream\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_greedy}{Greedy}}\&);}
+
+\end{DoxyCode}
