@@ -6,11 +6,13 @@
 ---
 
 ## Features ✨
+
 * Interactive Menu.
 * Greedy Algorithm implemented.
 * Simple and easy to use.
 
 ## Install 🔧
+
 ```
 git clone https://github.com/iluzioDev/core-coin.git
 cd core-coin
@@ -18,9 +20,11 @@ make
 ```
 
 ## Usage 💡
+
 Given an input of money, Core Coin returns the minimal change depending on the types of coin stored in the program.
 
 ## Examples 🖍
+
 ```
 ----------------------------------------------------------------
 Core Coin
@@ -42,6 +46,7 @@ Total de coins: 25
 ```
 
 ## Maintainers 👷
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/iluzioDev"><img src="https://avatars.githubusercontent.com/u/45295283?v=4" width="100px;" alt="IluzioDev"/><br /><sub><b>IluzioDev</b></sub></a><br />💻</td>
