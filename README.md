@@ -1,6 +1,5 @@
 # Core Coin
 
-[![Build Status](https://travis-ci.com/iluzioDev/core-coin.svg?branch=master)](https://travis-ci.com/iluzioDev/core-coin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Twitter](https://img.shields.io/twitter/follow/luctstt.svg?label=Follow&style=social)](https://twitter.com/iluzioDev)
 
